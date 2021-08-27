@@ -10861,6 +10861,32 @@ ul {
     list-style: none;
     padding: 0.1rem 0.2rem; }
 
+.pCard {
+  background-color: red;
+  width: 200px;
+  margin: .5rem;
+  border-radius: 8px;
+  overflow: hidden; }
+  .pCard_img {
+    height: 180px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center; }
+    .pCard_img img {
+      width: 200px; }
+  .pCard_body {
+    padding: .5rem;
+    background-color: beige; }
+    .pCard_body h2, .pCard_body .h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: blue; }
+    .pCard_body p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: red; }
+
 * {
   margin: 0;
   padding: 0;
@@ -11344,6 +11370,9 @@ main {
               color: #6e2d2d !important; }
         .mainProductos_head_categorias_body_item_sub:focus_item {
           display: inline-block; }
+  .mainProductos_content {
+    display: flex;
+    flex-wrap: wrap; }
 
 footer {
   width: 100%;
