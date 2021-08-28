@@ -10863,27 +10863,35 @@ ul {
 
 .pCard {
   background-color: red;
-  width: 200px;
+  width: 210px;
+  height: 350px;
   margin: .5rem;
   border-radius: 8px;
   overflow: hidden; }
   .pCard_img {
-    height: 180px;
+    height: 170px;
     overflow: hidden;
     justify-content: center;
     align-items: center; }
     .pCard_img img {
-      width: 200px; }
+      height: 180px; }
   .pCard_body {
     padding: .5rem;
-    background-color: beige; }
+    background-color: beige;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between; }
     .pCard_body h2, .pCard_body .h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: 1.3rem;
+      font-size: 1rem;
       font-weight: 400;
       color: blue; }
+    .pCard_body h3, .pCard_body .h3 {
+      font-size: .8rem; }
     .pCard_body p {
-      font-size: 1rem;
+      font-size: .7rem;
       font-weight: 300;
       color: red; }
 
@@ -11372,7 +11380,10 @@ main {
           display: inline-block; }
   .mainProductos_content {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center; }
 
 footer {
   width: 100%;

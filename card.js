@@ -4,15 +4,17 @@ class cardC extends HTMLElement {
         this.prodnum;
         this.titulo;
         this.desc;
+        this.formato;
         this.mxcj;
         this.precioc;
         this.preciom;
-        this.src;
+        this.src1;
+        this.src2;
 
     }
 
     static get observedAttributes() {
-        return ['titulo',"prodnum", "mxcj", "desc","precioc", "preciom", "src"];
+        return ['titulo',"prodnum", "mxcj", "desc","precioc", "preciom","formato", "src1", "src2"];
     }
 
     attributeChangedCallback(tituloAttr, oldValue, newValue) {
@@ -22,6 +24,9 @@ class cardC extends HTMLElement {
                 break;
             case "titulo":
                 this.titulo = newValue;
+                break;
+            case "formato":
+                this.formato = newValue;
                 break;
             case "desc":
                 this.desc = newValue;
@@ -35,8 +40,11 @@ class cardC extends HTMLElement {
             case "preciom":
                 this.preciom = newValue;
                 break;
-            case "src":
-                this.src = newValue;
+            case "src1":
+                this.src1 = newValue;
+                break;
+            case "src2":
+                this.src2 = newValue;
                 break;
         }
     }
@@ -49,14 +57,13 @@ class cardC extends HTMLElement {
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="${this.src}" class="" alt="...">
+                <img src="./img/productos/${this.src1}" class="" alt="${this.titulo}">
               </div>
               <div class="carousel-item">
-                <img src="${this.src}" class="d-block w-100" alt="...">
+                <img src="./img/productos/${this.src2}" class="d-block w-100" alt="${this.titulo}">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#${this.prodnum}" data-bs-slide="prev">
@@ -72,8 +79,8 @@ class cardC extends HTMLElement {
         <div class="pCard_body">
             <h3>${this.titulo}</h3>
             <p>${this.desc}</p>
-            <p>${this.mxcj}m2 por caja</p>
-            <p>${this.precioc} por caja</p>
+            <p><strong>${this.mxcj}m2</strong> por caja</p>
+            <p><strong>${this.precioc}</strong> por ${this.formato}</p>
             <h2>${this.preciom} x m2</h2>
         </div>
       </div>
