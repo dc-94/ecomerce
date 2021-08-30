@@ -10862,14 +10862,13 @@ ul {
     padding: 0.1rem 0.2rem; }
 
 .pCard {
-  background-color: red;
   width: 210px;
-  height: 350px;
-  margin: .5rem;
+  height: 360px;
+  margin: .7rem;
   border-radius: 8px;
   overflow: hidden; }
   .pCard_img {
-    height: 170px;
+    height: 160px;
     overflow: hidden;
     justify-content: center;
     align-items: center; }
@@ -10877,23 +10876,36 @@ ul {
       height: 180px; }
   .pCard_body {
     padding: .5rem;
-    background-color: beige;
-    height: 180px;
+    background-color: #fefffb;
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-between; }
+    .pCard_body .presentacion {
+      font-size: .7rem;
+      font-weight: 500;
+      line-height: .1; }
     .pCard_body h2, .pCard_body .h2 {
+      text-align: center;
       font-family: "Montserrat", sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      color: blue; }
+      font-size: .8rem;
+      font-weight: 300;
+      color: #83b81b;
+      border-top: gainsboro dotted 1px;
+      padding-top: .3rem; }
+      .pCard_body h2 span, .pCard_body .h2 span {
+        font-size: 1rem;
+        font-weight: 500; }
     .pCard_body h3, .pCard_body .h3 {
-      font-size: .8rem; }
+      font-size: .7rem;
+      border-bottom: dotted 1px gainsboro;
+      padding-bottom: .3rem; }
     .pCard_body p {
+      line-height: .1;
       font-size: .7rem;
       font-weight: 300;
-      color: red; }
+      color: #383838; }
 
 * {
   margin: 0;

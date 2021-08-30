@@ -78,10 +78,11 @@ class cardC extends HTMLElement {
         </div>
         <div class="pCard_body">
             <h3>${this.titulo}</h3>
+            <p class="presentacion">Presentacion:</p>
             <p>${this.desc}</p>
-            <p><strong>${this.mxcj}m2</strong> por caja</p>
-            <p><strong>${this.precioc}</strong> por ${this.formato}</p>
-            <h2>${this.preciom} x m2</h2>
+            <p><strong>${this.mxcj}m2</strong> por ${this.formato}</p>
+            <p><strong>${this.preciom}</strong> x m2</p>
+            <h2><span>${this.precioc}</span> x ${this.formato}</h2>
         </div>
       </div>
       `;
