@@ -10875,7 +10875,7 @@ ul {
     .pCard_img img {
       height: 180px; }
   .pCard_body {
-    padding: .5rem;
+    padding: .5rem 1rem;
     background-color: #fefffb;
     height: 190px;
     display: flex;
