@@ -448,7 +448,7 @@ progress {
   .blockquote-footer::before {
     content: "\2014\00A0"; }
 
-.img-fluid, img, main .main_section3_B_carousel_main_page_fullcard_card img, main .showrooms_card-body-img img {
+.img-fluid, img, main .showrooms_card-body-img img {
   max-width: 100%;
   height: auto; }
 
@@ -3226,7 +3226,7 @@ textarea.form-control-lg {
   .navbar-dark .navbar-text a:focus {
     color: #fff; }
 
-.card, main .main_section2_B_fullcard_card, main .main_section3_B_carousel_main_page_fullcard_card, main .showrooms_card {
+.card, main .main_section2_B_fullcard_card, main .showrooms_card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -3236,39 +3236,38 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
-  .card > hr, main .main_section2_B_fullcard_card > hr, main .main_section3_B_carousel_main_page_fullcard_card > hr, main .showrooms_card > hr {
+  .card > hr, main .main_section2_B_fullcard_card > hr, main .showrooms_card > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group, main .main_section2_B_fullcard_card > .list-group, main .main_section3_B_carousel_main_page_fullcard_card > .list-group, main .showrooms_card > .list-group {
+  .card > .list-group, main .main_section2_B_fullcard_card > .list-group, main .showrooms_card > .list-group {
     border-top: inherit;
     border-bottom: inherit; }
-    .card > .list-group:first-child, main .main_section2_B_fullcard_card > .list-group:first-child, main .main_section3_B_carousel_main_page_fullcard_card > .list-group:first-child, main .showrooms_card > .list-group:first-child {
+    .card > .list-group:first-child, main .main_section2_B_fullcard_card > .list-group:first-child, main .showrooms_card > .list-group:first-child {
       border-top-width: 0;
       border-top-left-radius: calc(0.25rem - 1px);
       border-top-right-radius: calc(0.25rem - 1px); }
-    .card > .list-group:last-child, main .main_section2_B_fullcard_card > .list-group:last-child, main .main_section3_B_carousel_main_page_fullcard_card > .list-group:last-child, main .showrooms_card > .list-group:last-child {
+    .card > .list-group:last-child, main .main_section2_B_fullcard_card > .list-group:last-child, main .showrooms_card > .list-group:last-child {
       border-bottom-width: 0;
       border-bottom-right-radius: calc(0.25rem - 1px);
       border-bottom-left-radius: calc(0.25rem - 1px); }
-  .card > .card-header + .list-group, main .main_section2_B_fullcard_card > .card-header + .list-group, main .main_section3_B_carousel_main_page_fullcard_card > .card-header + .list-group, main .showrooms_card > .card-header + .list-group, main .card > .showrooms_ficha + .list-group, main .main_section2_B_fullcard_card > .showrooms_ficha + .list-group, main .main_section3_B_carousel_main_page_fullcard_card > .showrooms_ficha + .list-group, main .showrooms_card > .showrooms_ficha + .list-group,
+  .card > .card-header + .list-group, main .main_section2_B_fullcard_card > .card-header + .list-group, main .showrooms_card > .card-header + .list-group, main .card > .showrooms_ficha + .list-group, main .main_section2_B_fullcard_card > .showrooms_ficha + .list-group, main .showrooms_card > .showrooms_ficha + .list-group,
   .card > .list-group + .card-footer,
   main .main_section2_B_fullcard_card > .list-group + .card-footer,
-  main .main_section3_B_carousel_main_page_fullcard_card > .list-group + .card-footer,
   main .showrooms_card > .list-group + .card-footer {
     border-top: 0; }
 
-.card-body, main .main_section2_B_fullcard_card_txt, main .main_section3_B_carousel_main_page_fullcard_card_txt {
+.card-body, main .main_section2_B_fullcard_card_txt {
   flex: 1 1 auto;
   padding: 1rem 1rem; }
 
-.card-title, main .main_section3_B_carousel_main_page_fullcard_card_txt h3, main .main_section3_B_carousel_main_page_fullcard_card_txt .h3 {
+.card-title {
   margin-bottom: 0.5rem; }
 
 .card-subtitle, main .main_section2_B_fullcard_card_txt p {
   margin-top: -0.25rem;
   margin-bottom: 0; }
 
-.card-text:last-child, main .main_section2_B_fullcard_card_txt h4:last-child, main .main_section2_B_fullcard_card_txt .h4:last-child, main .main_section3_B_carousel_main_page_fullcard_card_txt p:last-child {
+.card-text:last-child, main .main_section2_B_fullcard_card_txt h4:last-child, main .main_section2_B_fullcard_card_txt .h4:last-child {
   margin-bottom: 0; }
 
 .card-link:hover {
@@ -3314,14 +3313,12 @@ textarea.form-control-lg {
 .card-img,
 .card-img-top,
 main .main_section2_B_fullcard_card img,
-main .main_section3_B_carousel_main_page_fullcard_card img,
 .card-img-bottom {
   width: 100%; }
 
 .card-img,
 .card-img-top,
-main .main_section2_B_fullcard_card img,
-main .main_section3_B_carousel_main_page_fullcard_card img {
+main .main_section2_B_fullcard_card img {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px); }
 
@@ -3330,57 +3327,51 @@ main .main_section3_B_carousel_main_page_fullcard_card img {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px); }
 
-.card-group > .card, main .card-group > .main_section2_B_fullcard_card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .showrooms_card {
+.card-group > .card, main .card-group > .main_section2_B_fullcard_card, main .card-group > .showrooms_card {
   margin-bottom: 0.75rem; }
 
 @media (min-width: 576px) {
   .card-group {
     display: flex;
     flex-flow: row wrap; }
-    .card-group > .card, main .card-group > .main_section2_B_fullcard_card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .showrooms_card {
+    .card-group > .card, main .card-group > .main_section2_B_fullcard_card, main .card-group > .showrooms_card {
       flex: 1 0 0%;
       margin-bottom: 0; }
-      .card-group > .card + .card, main .card-group > .main_section2_B_fullcard_card + .card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card + .card, main .card-group > .showrooms_card + .card, main .card-group > .card + .main_section2_B_fullcard_card, main .card-group > .main_section2_B_fullcard_card + .main_section2_B_fullcard_card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card + .main_section2_B_fullcard_card, main .card-group > .showrooms_card + .main_section2_B_fullcard_card, main .card-group > .card + .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .main_section2_B_fullcard_card + .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card + .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .showrooms_card + .main_section3_B_carousel_main_page_fullcard_card, main .card-group > .card + .showrooms_card, main .card-group > .main_section2_B_fullcard_card + .showrooms_card, main .card-group > .main_section3_B_carousel_main_page_fullcard_card + .showrooms_card, main .card-group > .showrooms_card + .showrooms_card {
+      .card-group > .card + .card, main .card-group > .main_section2_B_fullcard_card + .card, main .card-group > .showrooms_card + .card, main .card-group > .card + .main_section2_B_fullcard_card, main .card-group > .main_section2_B_fullcard_card + .main_section2_B_fullcard_card, main .card-group > .showrooms_card + .main_section2_B_fullcard_card, main .card-group > .card + .showrooms_card, main .card-group > .main_section2_B_fullcard_card + .showrooms_card, main .card-group > .showrooms_card + .showrooms_card {
         margin-left: 0;
         border-left: 0; }
-      .card-group > .card:not(:last-child), main .card-group > .main_section2_B_fullcard_card:not(:last-child), main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child), main .card-group > .showrooms_card:not(:last-child) {
+      .card-group > .card:not(:last-child), main .card-group > .main_section2_B_fullcard_card:not(:last-child), main .card-group > .showrooms_card:not(:last-child) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-top, main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-img-top, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .card-img-top, main .card-group > .showrooms_card:not(:last-child) .card-img-top, .card-group > .card:not(:last-child) main .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .card:not(:last-child) img, main .card-group > .main_section2_B_fullcard_card:not(:last-child) img, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) img, main .card-group > .showrooms_card:not(:last-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .showrooms_card:not(:last-child) img, .card-group > .card:not(:last-child) main .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .card:not(:last-child) img, main .card-group > .main_section2_B_fullcard_card:not(:last-child) .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .main_section2_B_fullcard_card:not(:last-child) img, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) img, main .card-group > .showrooms_card:not(:last-child) .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .showrooms_card:not(:last-child) img,
+        .card-group > .card:not(:last-child) .card-img-top, main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-img-top, main .card-group > .showrooms_card:not(:last-child) .card-img-top, .card-group > .card:not(:last-child) main .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .card:not(:last-child) img, main .card-group > .main_section2_B_fullcard_card:not(:last-child) img, main .card-group > .showrooms_card:not(:last-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .showrooms_card:not(:last-child) img,
         .card-group > .card:not(:last-child) .card-header,
         main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-header,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .card-header,
         main .card-group > .showrooms_card:not(:last-child) .card-header,
         .card-group > .card:not(:last-child) main .showrooms_ficha,
         main .card-group > .card:not(:last-child) .showrooms_ficha,
         main .card-group > .main_section2_B_fullcard_card:not(:last-child) .showrooms_ficha,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .showrooms_ficha,
         main .card-group > .showrooms_card:not(:last-child) .showrooms_ficha {
           border-top-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-bottom, main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-img-bottom, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .card-img-bottom, main .card-group > .showrooms_card:not(:last-child) .card-img-bottom,
+        .card-group > .card:not(:last-child) .card-img-bottom, main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-img-bottom, main .card-group > .showrooms_card:not(:last-child) .card-img-bottom,
         .card-group > .card:not(:last-child) .card-footer,
         main .card-group > .main_section2_B_fullcard_card:not(:last-child) .card-footer,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:last-child) .card-footer,
         main .card-group > .showrooms_card:not(:last-child) .card-footer {
           border-bottom-right-radius: 0; }
-      .card-group > .card:not(:first-child), main .card-group > .main_section2_B_fullcard_card:not(:first-child), main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child), main .card-group > .showrooms_card:not(:first-child) {
+      .card-group > .card:not(:first-child), main .card-group > .main_section2_B_fullcard_card:not(:first-child), main .card-group > .showrooms_card:not(:first-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-top, main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-img-top, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .card-img-top, main .card-group > .showrooms_card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) main .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .card:not(:first-child) img, main .card-group > .main_section2_B_fullcard_card:not(:first-child) img, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) img, main .card-group > .showrooms_card:not(:first-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .showrooms_card:not(:first-child) img, .card-group > .card:not(:first-child) main .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .card:not(:first-child) img, main .card-group > .main_section2_B_fullcard_card:not(:first-child) .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .main_section2_B_fullcard_card:not(:first-child) img, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) img, main .card-group > .showrooms_card:not(:first-child) .main_section3_B_carousel_main_page_fullcard_card img, main .main_section3_B_carousel_main_page_fullcard_card .card-group > .showrooms_card:not(:first-child) img,
+        .card-group > .card:not(:first-child) .card-img-top, main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-img-top, main .card-group > .showrooms_card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) main .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .card:not(:first-child) img, main .card-group > .main_section2_B_fullcard_card:not(:first-child) img, main .card-group > .showrooms_card:not(:first-child) .main_section2_B_fullcard_card img, main .main_section2_B_fullcard_card .card-group > .showrooms_card:not(:first-child) img,
         .card-group > .card:not(:first-child) .card-header,
         main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-header,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .card-header,
         main .card-group > .showrooms_card:not(:first-child) .card-header,
         .card-group > .card:not(:first-child) main .showrooms_ficha,
         main .card-group > .card:not(:first-child) .showrooms_ficha,
         main .card-group > .main_section2_B_fullcard_card:not(:first-child) .showrooms_ficha,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .showrooms_ficha,
         main .card-group > .showrooms_card:not(:first-child) .showrooms_ficha {
           border-top-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-bottom, main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-img-bottom, main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .card-img-bottom, main .card-group > .showrooms_card:not(:first-child) .card-img-bottom,
+        .card-group > .card:not(:first-child) .card-img-bottom, main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-img-bottom, main .card-group > .showrooms_card:not(:first-child) .card-img-bottom,
         .card-group > .card:not(:first-child) .card-footer,
         main .card-group > .main_section2_B_fullcard_card:not(:first-child) .card-footer,
-        main .card-group > .main_section3_B_carousel_main_page_fullcard_card:not(:first-child) .card-footer,
         main .card-group > .showrooms_card:not(:first-child) .card-footer {
           border-bottom-left-radius: 0; } }
 
@@ -4937,7 +4928,7 @@ main .main_section3_B_carousel_main_page_fullcard_card img {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .main_section3_B_carousel_main_page, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5099,7 +5090,7 @@ main .main_section3_B_carousel_main_page_fullcard_card img {
 .w-75 {
   width: 75% !important; }
 
-.w-100, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B, main .main_section3_B_carousel_main_page {
+.w-100, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B {
   width: 100% !important; }
 
 .w-auto {
@@ -8758,7 +8749,7 @@ header .nav_body {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .main_section3_B_carousel_main_page, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -11083,11 +11074,11 @@ main {
         main .main_section1_B-main_rvw {
           align-self: center; }
   main .main_section2 {
-    padding: 1rem;
+    padding: 2rem 1rem;
     margin-bottom: 4rem; }
     main .main_section2_A h2, main .main_section2_A .h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: 2rem;
+      font-size: 1.7rem;
       margin-bottom: 1.5rem;
       border-bottom: solid 1px #83b81b;
       padding-left: .5rem;
@@ -11105,9 +11096,10 @@ main {
       display: flex;
       justify-content: center; }
       main .main_section2_C_btn a {
-        font-size: .9rem; }
+        font-size: .8rem; }
   main .main_section3 {
-    padding: 3rem;
+    padding: 5rem 3rem;
+    margin-top: 2rem;
     justify-content: center;
     background-color: snow; }
     main .main_section3_A {
@@ -11116,11 +11108,11 @@ main {
       main .main_section3_A h2, main .main_section3_A .h2 {
         text-align: center;
         color: #f54343;
-        font-size: 4.5rem;
+        font-size: 4rem;
         text-shadow: #5b5b5b 2px 2px; }
       main .main_section3_A p {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 100; }
       main .main_section3_A a {
         display: block;
@@ -11129,26 +11121,10 @@ main {
         main .main_section3_A a:hover {
           text-decoration: underline; }
     main .main_section3_B {
-      padding: 2rem; }
-      main .main_section3_B_carousel span {
-        background-color: #8b8b8b;
-        border-radius: 50%;
-        margin: 0; }
-      main .main_section3_B_carousel_main_page {
-        align-items: center;
-        justify-content: space-around; }
-        main .main_section3_B_carousel_main_page_fullcard {
-          margin: 10px; }
-          main .main_section3_B_carousel_main_page_fullcard_card {
-            border: none; }
-            main .main_section3_B_carousel_main_page_fullcard_card:hover {
-              box-shadow: #8081823a 0 -1px  8px; }
-            main .main_section3_B_carousel_main_page_fullcard_card img {
-              width: 300px;
-              height: auto; }
-            main .main_section3_B_carousel_main_page_fullcard_card_txt_sale {
-              color: #8b8b8b;
-              text-decoration: line-through; }
+      padding: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   main .main_section4 {
     background-color: #383838;
     background-size: cover;
@@ -11401,6 +11377,23 @@ main {
     padding: 0 1rem;
     justify-content: center;
     align-items: center; }
+  .mainProductos_empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .mainProductos_empty img {
+      width: 100%;
+      padding: 1rem; }
+    .mainProductos_empty p {
+      background-color: white;
+      color: #83b81b;
+      font-size: 1.3rem;
+      font-weight: 200; }
+    .mainProductos_empty a {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-decoration: underline; }
 
 footer {
   width: 100%;

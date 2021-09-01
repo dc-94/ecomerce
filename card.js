@@ -85,6 +85,7 @@ class cardC extends HTMLElement {
             <h2><span>${this.precioc}</span> x ${this.formato}</h2>
         </div>
       </div>
+    </div>
       `;
     }
 }
