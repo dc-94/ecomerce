@@ -10865,7 +10865,7 @@ ul {
   width: 210px;
   height: 360px;
   margin: .7rem;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden; }
   .pCard_img {
     height: 160px;
@@ -10873,6 +10873,7 @@ ul {
     justify-content: center;
     align-items: center; }
     .pCard_img img {
+      border-radius: 5px;
       height: 180px; }
   .pCard_body {
     padding: .5rem 1rem;
@@ -10883,7 +10884,7 @@ ul {
     align-content: space-between;
     justify-content: space-between; }
     .pCard_body .presentacion {
-      font-size: .7rem;
+      font-size: .6rem;
       font-weight: 500;
       line-height: .1; }
     .pCard_body h2, .pCard_body .h2 {
@@ -10902,7 +10903,6 @@ ul {
       border-bottom: dotted 1px gainsboro;
       padding-bottom: .3rem; }
     .pCard_body p {
-      line-height: .1;
       font-size: .7rem;
       font-weight: 300;
       color: #383838; }
@@ -11346,12 +11346,15 @@ main {
   margin-bottom: 4rem; }
   .mainProductos_head_title {
     padding: 0.5rem;
-    font-size: 2rem;
     border-bottom: solid 1px #83b81b;
     border-radius: 2px; }
     .mainProductos_head_title h2, .mainProductos_head_title .h2 {
+      font-size: 1.5rem;
       font-family: "Montserrat", sans-serif;
       padding-left: 1rem; }
+      .mainProductos_head_title h2 span, .mainProductos_head_title .h2 span {
+        font-weight: 100;
+        color: #8b8b8b; }
   .mainProductos_head_categorias {
     padding: .5rem .8rem; }
     .mainProductos_head_categorias button::after {
@@ -11366,6 +11369,8 @@ main {
         display: flex;
         justify-content: space-evenly;
         align-items: baseline; }
+        .mainProductos_head_categorias_body_item .actv {
+          color: #83b81b; }
         .mainProductos_head_categorias_body_item:not(:first-child)::before {
           content: '|';
           color: #83b81b;
