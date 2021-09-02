@@ -11033,6 +11033,24 @@ header {
     header .nav img, header .mainProductos_head_categorias img {
       height: 45px; }
 
+.wsp-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 35px;
+  background-color: #1ecc5e;
+  border-radius: 50px;
+  z-index: 100;
+  box-shadow: 0px 1px 10px #83b81b; }
+  .wsp-btn i {
+    display: block;
+    font-size: 2.5rem;
+    color: #fafafa; }
+
 main {
   padding-top: 70px; }
   main .main_section1 {
