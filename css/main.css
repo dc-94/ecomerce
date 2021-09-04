@@ -10875,9 +10875,8 @@ ul {
     align-content: space-between;
     justify-content: space-between; }
     .pCard_body .presentacion {
-      font-size: .6rem;
-      font-weight: 500;
-      line-height: .1; }
+      font-size: .8rem;
+      font-weight: 400; }
     .pCard_body h2, .pCard_body .h2 {
       text-align: center;
       font-family: "Montserrat", sans-serif;
@@ -10897,6 +10896,10 @@ ul {
       font-size: .7rem;
       font-weight: 300;
       color: #383838; }
+      .pCard_body p strong {
+        font-size: .7rem;
+        font-weight: 700;
+        color: #8b8b8b; }
 
 * {
   margin: 0;
