@@ -1766,7 +1766,7 @@ textarea.form-control-lg {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
-  .btn-check[disabled] + .btn, .btn-check:disabled + .btn {
+  .btn-check[disabled] + .btn, .pCard_body_modal .btn-check[disabled] + .cta, .pCard_body_modal_content_body_info_btns .btn-check[disabled] + .wsp, .btn-check:disabled + .btn, .pCard_body_modal .btn-check:disabled + .cta, .pCard_body_modal_content_body_info_btns .btn-check:disabled + .wsp {
     pointer-events: none;
     filter: none;
     opacity: 0.65; }
@@ -1891,10 +1891,10 @@ textarea.form-control-lg {
   .input-group > .form-control:focus,
   .input-group > .form-select:focus {
     z-index: 3; }
-  .input-group .btn {
+  .input-group .btn, .input-group .pCard_body_modal .cta, .pCard_body_modal .input-group .cta, .input-group .pCard_body_modal_content_body_info_btns .wsp, .pCard_body_modal_content_body_info_btns .input-group .wsp {
     position: relative;
     z-index: 2; }
-    .input-group .btn:focus {
+    .input-group .btn:focus, .input-group .pCard_body_modal .cta:focus, .pCard_body_modal .input-group .cta:focus, .input-group .pCard_body_modal_content_body_info_btns .wsp:focus, .pCard_body_modal_content_body_info_btns .input-group .wsp:focus {
       z-index: 3; }
 
 .input-group-text {
@@ -1914,7 +1914,9 @@ textarea.form-control-lg {
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .btn,
+.pCard_body_modal .input-group-lg > .cta,
+.pCard_body_modal_content_body_info_btns .input-group-lg > .wsp {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
@@ -1922,7 +1924,9 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn {
+.input-group-sm > .btn,
+.pCard_body_modal .input-group-sm > .cta,
+.pCard_body_modal_content_body_info_btns .input-group-sm > .wsp {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
@@ -2092,7 +2096,7 @@ textarea.form-control-lg {
   .input-group .form-select.is-invalid:focus {
     z-index: 3; }
 
-.btn {
+.btn, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2109,15 +2113,19 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn {
+    .btn, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
       transition: none; } }
-  .btn:hover {
+  .btn:hover, .pCard_body_modal .cta:hover, .pCard_body_modal_content_body_info_btns .wsp:hover {
     color: #212529; }
-  .btn-check:focus + .btn, .btn:focus {
+  .btn-check:focus + .btn, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, .btn:focus, .pCard_body_modal .cta:focus, .pCard_body_modal_content_body_info_btns .wsp:focus {
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
-  .btn:disabled, .btn.disabled,
-  fieldset:disabled .btn {
+  .btn:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, .btn.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal_content_body_info_btns .disabled.wsp,
+  fieldset:disabled .btn,
+  fieldset:disabled .pCard_body_modal .cta,
+  .pCard_body_modal fieldset:disabled .cta,
+  fieldset:disabled .pCard_body_modal_content_body_info_btns .wsp,
+  .pCard_body_modal_content_body_info_btns fieldset:disabled .wsp {
     pointer-events: none;
     opacity: 0.65; }
 
@@ -2177,30 +2185,38 @@ textarea.form-control-lg {
     background-color: #6c757d;
     border-color: #6c757d; }
 
-.btn-success {
+.btn-success, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
   color: #fff;
   background-color: #198754;
   border-color: #198754; }
-  .btn-success:hover {
+  .btn-success:hover, .pCard_body_modal .cta:hover, .pCard_body_modal_content_body_info_btns .wsp:hover {
     color: #fff;
     background-color: #157347;
     border-color: #146c43; }
-  .btn-check:focus + .btn-success, .btn-success:focus {
+  .btn-check:focus + .btn-success, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, .btn-success:focus, .pCard_body_modal .cta:focus, .pCard_body_modal_content_body_info_btns .wsp:focus {
     color: #fff;
     background-color: #157347;
     border-color: #146c43;
     box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5); }
-  .btn-check:checked + .btn-success,
-  .btn-check:active + .btn-success, .btn-success:active, .btn-success.active,
-  .show > .btn-success.dropdown-toggle {
+  .btn-check:checked + .btn-success, .pCard_body_modal .btn-check:checked + .cta, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp,
+  .btn-check:active + .btn-success,
+  .pCard_body_modal .btn-check:active + .cta,
+  .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp, .btn-success:active, .pCard_body_modal .cta:active, .pCard_body_modal_content_body_info_btns .wsp:active, .btn-success.active, .pCard_body_modal .active.cta, .pCard_body_modal_content_body_info_btns .active.wsp,
+  .show > .btn-success.dropdown-toggle,
+  .pCard_body_modal .show > .dropdown-toggle.cta,
+  .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp {
     color: #fff;
     background-color: #146c43;
     border-color: #13653f; }
-    .btn-check:checked + .btn-success:focus,
-    .btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus,
-    .show > .btn-success.dropdown-toggle:focus {
+    .btn-check:checked + .btn-success:focus, .pCard_body_modal .btn-check:checked + .cta:focus, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp:focus,
+    .btn-check:active + .btn-success:focus,
+    .pCard_body_modal .btn-check:active + .cta:focus,
+    .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp:focus, .btn-success:active:focus, .pCard_body_modal .cta:active:focus, .pCard_body_modal_content_body_info_btns .wsp:active:focus, .btn-success.active:focus, .pCard_body_modal .active.cta:focus, .pCard_body_modal_content_body_info_btns .active.wsp:focus,
+    .show > .btn-success.dropdown-toggle:focus,
+    .pCard_body_modal .show > .dropdown-toggle.cta:focus,
+    .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp:focus {
       box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5); }
-  .btn-success:disabled, .btn-success.disabled {
+  .btn-success:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, .btn-success.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal_content_body_info_btns .disabled.wsp {
     color: #fff;
     background-color: #198754;
     border-color: #198754; }
@@ -2522,12 +2538,12 @@ textarea.form-control-lg {
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d; }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .pCard_body_modal .btn-group-lg > .cta, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .pCard_body_modal .btn-group-sm > .cta, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
@@ -2808,22 +2824,46 @@ textarea.form-control-lg {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
-  .btn-group-vertical > .btn {
+  .btn-group > .btn, .pCard_body_modal .btn-group > .cta, .pCard_body_modal_content_body_info_btns .btn-group > .wsp,
+  .btn-group-vertical > .btn,
+  .pCard_body_modal .btn-group-vertical > .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp {
     position: relative;
     flex: 1 1 auto; }
-  .btn-group > .btn-check:checked + .btn,
+  .btn-group > .btn-check:checked + .btn, .pCard_body_modal .btn-group > .btn-check:checked + .cta, .pCard_body_modal_content_body_info_btns .btn-group > .btn-check:checked + .wsp,
   .btn-group > .btn-check:focus + .btn,
+  .pCard_body_modal .btn-group > .btn-check:focus + .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group > .btn-check:focus + .wsp,
   .btn-group > .btn:hover,
+  .pCard_body_modal .btn-group > .cta:hover,
+  .pCard_body_modal_content_body_info_btns .btn-group > .wsp:hover,
   .btn-group > .btn:focus,
+  .pCard_body_modal .btn-group > .cta:focus,
+  .pCard_body_modal_content_body_info_btns .btn-group > .wsp:focus,
   .btn-group > .btn:active,
+  .pCard_body_modal .btn-group > .cta:active,
+  .pCard_body_modal_content_body_info_btns .btn-group > .wsp:active,
   .btn-group > .btn.active,
+  .pCard_body_modal .btn-group > .active.cta,
+  .pCard_body_modal_content_body_info_btns .btn-group > .active.wsp,
   .btn-group-vertical > .btn-check:checked + .btn,
+  .pCard_body_modal .btn-group-vertical > .btn-check:checked + .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-check:checked + .wsp,
   .btn-group-vertical > .btn-check:focus + .btn,
+  .pCard_body_modal .btn-group-vertical > .btn-check:focus + .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-check:focus + .wsp,
   .btn-group-vertical > .btn:hover,
+  .pCard_body_modal .btn-group-vertical > .cta:hover,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:hover,
   .btn-group-vertical > .btn:focus,
+  .pCard_body_modal .btn-group-vertical > .cta:focus,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:focus,
   .btn-group-vertical > .btn:active,
-  .btn-group-vertical > .btn.active {
+  .pCard_body_modal .btn-group-vertical > .cta:active,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:active,
+  .btn-group-vertical > .btn.active,
+  .pCard_body_modal .btn-group-vertical > .active.cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .active.wsp {
     z-index: 1; }
 
 .btn-toolbar {
@@ -2833,18 +2873,24 @@ textarea.form-control-lg {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child),
+.btn-group > .btn:not(:first-child), .pCard_body_modal .btn-group > .cta:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn,
+.pCard_body_modal .btn-group > .btn-group:not(:last-child) > .cta,
+.pCard_body_modal_content_body_info_btns .btn-group > .btn-group:not(:last-child) > .wsp {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:nth-child(n + 3),
+.btn-group > .btn:nth-child(n + 3), .pCard_body_modal .btn-group > .cta:nth-child(n + 3), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:nth-child(n + 3),
 .btn-group > :not(.btn-check) + .btn,
-.btn-group > .btn-group:not(:first-child) > .btn {
+.pCard_body_modal .btn-group > :not(.btn-check) + .cta,
+.pCard_body_modal_content_body_info_btns .btn-group > :not(.btn-check) + .wsp,
+.btn-group > .btn-group:not(:first-child) > .btn,
+.pCard_body_modal .btn-group > .btn-group:not(:first-child) > .cta,
+.pCard_body_modal_content_body_info_btns .btn-group > .btn-group:not(:first-child) > .wsp {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2858,11 +2904,11 @@ textarea.form-control-lg {
   .dropstart .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-sm > .cta + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-lg > .cta + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2870,18 +2916,25 @@ textarea.form-control-lg {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
+  
   .btn-group-vertical > .btn,
+  .pCard_body_modal .btn-group-vertical > .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .pCard_body_modal .btn-group-vertical > .cta:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-  .btn-group-vertical > .btn-group:not(:last-child) > .btn {
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group-vertical > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+  .pCard_body_modal .btn-group-vertical > .btn-group:not(:last-child) > .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-group:not(:last-child) > .wsp {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn ~ .btn,
-  .btn-group-vertical > .btn-group:not(:first-child) > .btn {
+  .btn-group-vertical > .btn ~ .btn, .pCard_body_modal .btn-group-vertical > .cta ~ .btn, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .btn, .pCard_body_modal .btn-group-vertical > .btn ~ .cta, .pCard_body_modal .btn-group-vertical > .cta ~ .cta, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn ~ .wsp, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .wsp,
+  .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+  .pCard_body_modal .btn-group-vertical > .btn-group:not(:first-child) > .cta,
+  .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-group:not(:first-child) > .wsp {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
@@ -3571,7 +3624,7 @@ main .main_section2_B_fullcard_card img {
   .badge:empty {
     display: none; }
 
-.btn .badge {
+.btn .badge, .pCard_body_modal .cta .badge, .pCard_body_modal_content_body_info_btns .wsp .badge {
   position: relative;
   top: -1px; }
 
@@ -5090,7 +5143,7 @@ main .main_section2_B_fullcard_card img {
 .w-75 {
   width: 75% !important; }
 
-.w-100, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B {
+.w-100, .pCard_body_modal_content_body_carousel, .pCard_body_modal_content_body_info, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B {
   width: 100% !important; }
 
 .w-auto {
@@ -6165,7 +6218,7 @@ main .main_section2_B_fullcard_card img {
     display: table-row !important; }
   .d-md-table-cell {
     display: table-cell !important; }
-  .d-md-flex, main .main_section1_B-main, main .contact_main, main .showrooms_card-body, footer .footer_section_local {
+  .d-md-flex, .pCard_body_modal_content_body, main .main_section1_B-main, main .contact_main, main .showrooms_card-body, footer .footer_section_local {
     display: flex !important; }
   .d-md-inline-flex {
     display: inline-flex !important; }
@@ -9517,7 +9570,7 @@ header .nav_body {
     display: table-row !important; }
   .d-md-table-cell {
     display: table-cell !important; }
-  .d-md-flex, main .main_section1_B-main, main .contact_main, main .showrooms_card-body, footer .footer_section_local {
+  .d-md-flex, .pCard_body_modal_content_body, main .main_section1_B-main, main .contact_main, main .showrooms_card-body, footer .footer_section_local {
     display: flex !important; }
   .d-md-inline-flex {
     display: inline-flex !important; }
@@ -10854,10 +10907,13 @@ ul {
 
 .pCard {
   width: 210px;
-  height: 360px;
+  height: 300px;
   margin: .7rem;
-  border-radius: 5px;
-  overflow: hidden; }
+  border-radius: 5px; }
+  .pCard:hover {
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.127);
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.027); }
   .pCard_img {
     height: 160px;
     overflow: hidden;
@@ -10869,14 +10925,17 @@ ul {
   .pCard_body {
     padding: .5rem 1rem;
     background-color: #fefffb;
-    height: 190px;
+    height: 130px;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: flex-start;
     justify-content: space-between; }
     .pCard_body .presentacion {
       font-size: .8rem;
       font-weight: 400; }
+    .pCard_body_txt {
+      max-height: 100px;
+      background-color: khaki; }
     .pCard_body h2, .pCard_body .h2 {
       text-align: center;
       font-family: "Montserrat", sans-serif;
@@ -10891,8 +10950,10 @@ ul {
     .pCard_body h3, .pCard_body .h3 {
       font-size: .7rem;
       border-bottom: dotted 1px gainsboro;
-      padding-bottom: .3rem; }
+      padding-bottom: .3rem;
+      word-wrap: break-word; }
     .pCard_body p {
+      word-wrap: break-word;
       font-size: .7rem;
       font-weight: 300;
       color: #383838; }
@@ -10900,6 +10961,48 @@ ul {
         font-size: .7rem;
         font-weight: 700;
         color: #8b8b8b; }
+    .pCard_body_modal .cta {
+      width: 100%;
+      height: 1.8rem;
+      font-size: .7rem;
+      font-family: "Montserrat", sans-serif; }
+      .pCard_body_modal .cta:hover {
+        color: #ceff80; }
+    .pCard_body_modal_content {
+      background-color: blue; }
+      .pCard_body_modal_content_body {
+        background-color: blueviolet;
+        justify-content: space-between;
+        align-items: center; }
+        .pCard_body_modal_content_body_carousel {
+          height: max-content;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center; }
+          .pCard_body_modal_content_body_carousel img {
+            height: 400px;
+            width: fit-content; }
+        .pCard_body_modal_content_body_info {
+          background-color: white;
+          padding: 1rem 3rem; }
+          .pCard_body_modal_content_body_info_btns .wsp {
+            font-size: .7rem;
+            font-family: "Montserrat", sans-serif;
+            background-color: #1ecc5e;
+            border: none; }
+            .pCard_body_modal_content_body_info_btns .wsp a {
+              color: #FEFFF5;
+              font-size: 1.1rem;
+              padding: 5px; }
+              .pCard_body_modal_content_body_info_btns .wsp a i {
+                font-size: 1.6rem;
+                position: relative; }
+          .pCard_body_modal_content_body_info_btns button {
+            width: fit-content; }
+      .pCard_body_modal_content_header button {
+        width: fit-content; }
+        .pCard_body_modal_content_header button a {
+          display: block; }
 
 * {
   margin: 0;
