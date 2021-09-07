@@ -95,12 +95,8 @@ class cardC extends HTMLElement {
               <div class="modal  fade" id="${this.prodnum}1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                   <div class="pCard_body_modal_content modal-content">
-                    <div class="pCard_body_modal_content_header modal-header">
-                      <h5 class="modal-title" id="${this.prodnum}1Label">${this.titulo}</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <div class="pCard_body_modal_content_body modal-body">
+                    <button type="button" class="x_modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="pCard_body_modal_content_body modal-body">
                     <div class="pCard_body_modal_content_body_carousel ">
                       <div id="${this.prodnum}2" class="carousel carousel-fade slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -127,26 +123,29 @@ class cardC extends HTMLElement {
                     </div>
 
                     <div class="pCard_body_modal_content_body_info">
-                    <div class="pCard_body_modal_content_body_info_txt">
-                      <p class="presentacion">Detalles:</p>
-                      <p>${this.desc}</p>
-                      <hr class="dropdown-divider">
-                      <p><strong>${this.mxcj}m2</strong> por ${this.formato}</p>
-                      <hr class="dropdown-divider">
-                      <p><strong>Uso:</strong> ${this.uso}</p>
-                      <hr class="dropdown-divider">
-                      <p><strong>Marca:</strong> ${this.marca}</p>
-                      <hr class="dropdown-divider">
-                      <p><strong>Material:</strong> ${this.material}</p>
-                      <hr class="dropdown-divider">
-                      <p>SKU: ${this.prodnum}</p>
-                    </div>
-                    <div class="pCard_body_modal_content_body_info_btns">
-                      <button type="button" class="btn link" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="wsp ">
-                        <a href="https://api.whatsapp.com/send?phone=543413216351&text=Hola%21%20buenos%20m%C3%A1s%20rmaci%C3%B3n%20sobre%20${this.titulo}-${this.prodnum}%202." target="_blank"><i class="ri-whatsapp-line"></i>  Consultar</a>
-                      </button>
-                    </div>
+                      <div class="pCard_body_modal_content_body_info_title">
+                        <h5 class="modal-title" id="${this.prodnum}1Label">${this.titulo}</h5>
+                      </div>
+                      <div class="pCard_body_modal_content_body_info_txt">
+                        <p class="presentacion">Detalles:</p>
+                        <p>${this.desc}</p>
+                        <hr class="dropdown-divider">
+                        <p><strong>${this.mxcj}m2</strong> por ${this.formato}</p>
+                        <hr class="dropdown-divider">
+                        <p><strong>Uso:</strong> ${this.uso}</p>
+                        <hr class="dropdown-divider">
+                        <p><strong>Marca:</strong> ${this.marca}</p>
+                        <hr class="dropdown-divider">
+                        <p><strong>Material:</strong> ${this.material}</p>
+                        <hr class="dropdown-divider">
+                        <p>SKU: ${this.prodnum}</p>
+                      </div>
+                      <div class="pCard_body_modal_content_body_info_btns">
+                        <button type="button" class="btn link" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="wsp ">
+                          <a href="https://api.whatsapp.com/send?phone=543413216351&text=Hola%21%20buenos%20m%C3%A1s%20rmaci%C3%B3n%20sobre%20${this.titulo}-${this.prodnum}%202." target="_blank">Consultar</a>
+                        </button>
+                      </div>
                   </div>
                 </div>
                   </div>
