@@ -4972,7 +4972,7 @@ textarea.form-control-lg {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5323,7 +5323,7 @@ textarea.form-control-lg {
 .m-0 {
   margin: 0 !important; }
 
-.m-1 {
+.m-1, .pCard {
   margin: 0.25rem !important; }
 
 .m-2 {
@@ -5338,7 +5338,7 @@ textarea.form-control-lg {
 .m-5 {
   margin: 3rem !important; }
 
-.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
+.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info .off, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
   margin: auto !important; }
 
 .mx-0 {
@@ -5484,7 +5484,7 @@ textarea.form-control-lg {
 .p-0 {
   padding: 0 !important; }
 
-.p-1 {
+.p-1, .pCard {
   padding: 0.25rem !important; }
 
 .p-2 {
@@ -5879,7 +5879,7 @@ textarea.form-control-lg {
     flex: 1 1 auto !important; }
   .flex-sm-row {
     flex-direction: row !important; }
-  .flex-sm-column {
+  .flex-sm-column, .pCard {
     flex-direction: column !important; }
   .flex-sm-row-reverse {
     flex-direction: row-reverse !important; }
@@ -6319,7 +6319,7 @@ textarea.form-control-lg {
     margin: 0.25rem !important; }
   .m-md-2 {
     margin: 0.5rem !important; }
-  .m-md-3 {
+  .m-md-3, .pCard {
     margin: 1rem !important; }
   .m-md-4 {
     margin: 1.5rem !important; }
@@ -6429,7 +6429,7 @@ textarea.form-control-lg {
     padding: 0 !important; }
   .p-md-1 {
     padding: 0.25rem !important; }
-  .p-md-2 {
+  .p-md-2, .pCard {
     padding: 0.5rem !important; }
   .p-md-3 {
     padding: 1rem !important; }
@@ -8793,7 +8793,7 @@ header .nav_body {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -8934,7 +8934,7 @@ header .nav_body {
 .m-0 {
   margin: 0 !important; }
 
-.m-1 {
+.m-1, .pCard {
   margin: 0.25rem !important; }
 
 .m-2 {
@@ -8949,7 +8949,7 @@ header .nav_body {
 .m-5 {
   margin: 3rem !important; }
 
-.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
+.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info .off, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
   margin: auto !important; }
 
 .mx-0 {
@@ -9095,7 +9095,7 @@ header .nav_body {
 .p-0 {
   padding: 0 !important; }
 
-.p-1 {
+.p-1, .pCard {
   padding: 0.25rem !important; }
 
 .p-2 {
@@ -9255,7 +9255,7 @@ header .nav_body {
     flex: 1 1 auto !important; }
   .flex-sm-row {
     flex-direction: row !important; }
-  .flex-sm-column {
+  .flex-sm-column, .pCard {
     flex-direction: column !important; }
   .flex-sm-row-reverse {
     flex-direction: row-reverse !important; }
@@ -9659,7 +9659,7 @@ header .nav_body {
     margin: 0.25rem !important; }
   .m-md-2 {
     margin: 0.5rem !important; }
-  .m-md-3 {
+  .m-md-3, .pCard {
     margin: 1rem !important; }
   .m-md-4 {
     margin: 1.5rem !important; }
@@ -9769,7 +9769,7 @@ header .nav_body {
     padding: 0 !important; }
   .p-md-1 {
     padding: 0.25rem !important; }
-  .p-md-2 {
+  .p-md-2, .pCard {
     padding: 0.5rem !important; }
   .p-md-3 {
     padding: 1rem !important; }
@@ -10897,16 +10897,14 @@ ul {
     padding: 0.1rem 0.2rem; }
 
 .pCard {
-  width: 210px;
-  height: 300px;
-  margin: .7rem;
   border-radius: 5px; }
   .pCard:hover {
     box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.127);
     -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.027); }
   .pCard_img {
-    height: 160px;
+    width: 180px;
+    height: 150px;
     overflow: hidden;
     justify-content: center;
     align-items: center; }
@@ -10914,9 +10912,10 @@ ul {
       border-radius: 5px;
       height: 180px; }
   .pCard_body {
-    padding: .5rem 1rem;
     background-color: #fefffb;
-    height: 130px;
+    width: 180px;
+    height: 150px;
+    padding: .5rem 1rem;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -10925,8 +10924,7 @@ ul {
       font-size: .8rem;
       font-weight: 400; }
     .pCard_body_txt {
-      max-height: 100px;
-      background-color: khaki; }
+      max-height: 100px; }
     .pCard_body h2, .pCard_body .h2 {
       text-align: center;
       font-family: "Montserrat", sans-serif;
@@ -10972,20 +10970,66 @@ ul {
         justify-content: space-evenly;
         align-items: center; }
         .pCard_body_modal_content_body_carousel {
-          height: max-content;
+          height: fit-content;
           overflow: hidden;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           border-radius: 5px;
           overflow: hidden; }
           .pCard_body_modal_content_body_carousel img {
-            height: 380px;
-            width: fit-content; }
+            height: 330px;
+            width: auto; }
         .pCard_body_modal_content_body_info {
-          background-color: #FEFFF5;
-          padding: 0rem 2rem;
-          height: 380px;
+          padding: 0rem 1rem;
+          height: 350px;
           margin: 3rem; }
+          .pCard_body_modal_content_body_info .precio {
+            font-size: 1.1rem;
+            color: #ff2929;
+            font-weight: 300;
+            line-height: normal; }
+            .pCard_body_modal_content_body_info .precio span {
+              color: #8b8b8b;
+              font-size: .8rem;
+              text-decoration: line-through; }
+          .pCard_body_modal_content_body_info .off {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -1rem;
+            width: auto;
+            height: 2rem;
+            background: #ee2b2bcb;
+            border-radius: 4px 0 0 4px;
+            animation: off .7s ease-in-out; }
+            .pCard_body_modal_content_body_info .off p {
+              margin: .8rem;
+              color: #FEFFF5; }
+
+@keyframes off {
+  from {
+    transform-origin: right;
+    transform: scale(0); }
+  to {
+    transform: scale(1);
+    transform-origin: right; } }
+          .pCard_body_modal_content_body_info p {
+            line-height: .5; }
+          .pCard_body_modal_content_body_info_title {
+            padding: .5rem 0; }
+            .pCard_body_modal_content_body_info_title h5, .pCard_body_modal_content_body_info_title .h5 {
+              font-size: 1.1rem; }
+          .pCard_body_modal_content_body_info_title::after {
+            content: '';
+            background-color: #F2F2F2;
+            border-radius: 2px;
+            height: .5rem;
+            display: block;
+            position: relative;
+            margin: .4rem 0 1rem 0; }
+          .pCard_body_modal_content_body_info button {
+            font-size: .8rem; }
           .pCard_body_modal_content_body_info_btns {
             position: absolute;
             bottom: 1rem;
@@ -10994,11 +11038,13 @@ ul {
             .pCard_body_modal_content_body_info_btns .wsp {
               font-family: "Montserrat", sans-serif;
               background-color: #1ecc5e;
-              border: none; }
+              border: none;
+              height: 40px; }
               .pCard_body_modal_content_body_info_btns .wsp a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                font-size: .9rem;
                 color: #FEFFF5; }
                 .pCard_body_modal_content_body_info_btns .wsp a::before {
                   font-family: 'remixicon';
@@ -11010,7 +11056,7 @@ ul {
                   position: relative;
                   left: 0px;
                   bottom: 2px;
-                  font-size: 1.5rem;
+                  font-size: 1.4rem;
                   padding-right: 5px; }
             .pCard_body_modal_content_body_info_btns button {
               width: fit-content; }
@@ -11259,6 +11305,7 @@ main {
     main .main_section3_B {
       padding: .5rem;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center; }
   main .main_section4 {
