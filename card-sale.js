@@ -69,6 +69,7 @@ class cardS extends HTMLElement {
         <div class="pCard ">
         <div class="pCard_img">
           <div id="${this.prodnum}" class="carousel slide" data-bs-ride="carousel">
+        <div class="off"><p>-${this.off}% OFF</p></div>
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -94,15 +95,18 @@ class cardS extends HTMLElement {
         <div class="pCard_body">
           <div class="pCard_body_txt">
             <h3>${this.titulo}</h3>
-            <p>${this.desc} 
-              </p>
+            <p class="precio ps-3"><span> ${this.precion}</span> <br> ${this.preciod}</p>
           </div>
           <div class="pCard_body_modal">
+          
             <!-- Button trigger modal -->
-            <button type="button" class="cta" data-bs-toggle="modal" data-bs-target="#${this.prodnum}1">
+          
+            <button type="button" class="cta_off " data-bs-toggle="modal" data-bs-target="#${this.prodnum}1">
               ver producto
             </button>
+
             <!-- Modal -->
+            
             <div class="modal  fade" id="${this.prodnum}1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg">
                 <div class="pCard_body_modal_content modal-content">
@@ -138,7 +142,7 @@ class cardS extends HTMLElement {
                       <h5 class="modal-title" id="${this.prodnum}1Label">${this.titulo}</h5>
                     </div>
                     <div class="pCard_body_modal_content_body_info_txt">
-                      <div class="off"><p>${this.off}</p></div>
+                      <div class="off"><p>-${this.off}% OFF</p></div>
                       <p class="precio">${this.preciod} <br> <span> ${this.precion}</span></p>
                       <hr class="dropdown-divider">
                       <p class="presentacion">Detalles:</p>

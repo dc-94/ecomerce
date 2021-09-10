@@ -1766,7 +1766,7 @@ textarea.form-control-lg {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
-  .btn-check[disabled] + .btn, .pCard_body_modal .btn-check[disabled] + .cta, .pCard_body_modal_content_body_info_btns .btn-check[disabled] + .wsp, .btn-check:disabled + .btn, .pCard_body_modal .btn-check:disabled + .cta, .pCard_body_modal_content_body_info_btns .btn-check:disabled + .wsp {
+  .btn-check[disabled] + .btn, .pCard_body_modal .btn-check[disabled] + .cta, .pCard_body_modal .btn-check[disabled] + .cta_off, .pCard_body_modal_content_body_info_btns .btn-check[disabled] + .wsp, .btn-check:disabled + .btn, .pCard_body_modal .btn-check:disabled + .cta, .pCard_body_modal .btn-check:disabled + .cta_off, .pCard_body_modal_content_body_info_btns .btn-check:disabled + .wsp {
     pointer-events: none;
     filter: none;
     opacity: 0.65; }
@@ -1891,10 +1891,10 @@ textarea.form-control-lg {
   .input-group > .form-control:focus,
   .input-group > .form-select:focus {
     z-index: 3; }
-  .input-group .btn, .input-group .pCard_body_modal .cta, .pCard_body_modal .input-group .cta, .input-group .pCard_body_modal_content_body_info_btns .wsp, .pCard_body_modal_content_body_info_btns .input-group .wsp {
+  .input-group .btn, .input-group .pCard_body_modal .cta, .pCard_body_modal .input-group .cta, .input-group .pCard_body_modal .cta_off, .pCard_body_modal .input-group .cta_off, .input-group .pCard_body_modal_content_body_info_btns .wsp, .pCard_body_modal_content_body_info_btns .input-group .wsp {
     position: relative;
     z-index: 2; }
-    .input-group .btn:focus, .input-group .pCard_body_modal .cta:focus, .pCard_body_modal .input-group .cta:focus, .input-group .pCard_body_modal_content_body_info_btns .wsp:focus, .pCard_body_modal_content_body_info_btns .input-group .wsp:focus {
+    .input-group .btn:focus, .input-group .pCard_body_modal .cta:focus, .pCard_body_modal .input-group .cta:focus, .input-group .pCard_body_modal .cta_off:focus, .pCard_body_modal .input-group .cta_off:focus, .input-group .pCard_body_modal_content_body_info_btns .wsp:focus, .pCard_body_modal_content_body_info_btns .input-group .wsp:focus {
       z-index: 3; }
 
 .input-group-text {
@@ -1916,6 +1916,7 @@ textarea.form-control-lg {
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
 .pCard_body_modal .input-group-lg > .cta,
+.pCard_body_modal .input-group-lg > .cta_off,
 .pCard_body_modal_content_body_info_btns .input-group-lg > .wsp {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -1926,6 +1927,7 @@ textarea.form-control-lg {
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
 .pCard_body_modal .input-group-sm > .cta,
+.pCard_body_modal .input-group-sm > .cta_off,
 .pCard_body_modal_content_body_info_btns .input-group-sm > .wsp {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -2096,7 +2098,7 @@ textarea.form-control-lg {
   .input-group .form-select.is-invalid:focus {
     z-index: 3; }
 
-.btn, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
+.btn, .pCard_body_modal .cta, .pCard_body_modal .cta_off, .pCard_body_modal_content_body_info_btns .wsp {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -2113,17 +2115,19 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
-    .btn, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
+    .btn, .pCard_body_modal .cta, .pCard_body_modal .cta_off, .pCard_body_modal_content_body_info_btns .wsp {
       transition: none; } }
-  .btn:hover, .pCard_body_modal .cta:hover, .pCard_body_modal_content_body_info_btns .wsp:hover {
+  .btn:hover, .pCard_body_modal .cta:hover, .pCard_body_modal .cta_off:hover, .pCard_body_modal_content_body_info_btns .wsp:hover {
     color: #212529; }
-  .btn-check:focus + .btn, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, .btn:focus, .pCard_body_modal .cta:focus, .pCard_body_modal_content_body_info_btns .wsp:focus {
+  .btn-check:focus + .btn, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal .btn-check:focus + .cta_off, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, .btn:focus, .pCard_body_modal .cta:focus, .pCard_body_modal .cta_off:focus, .pCard_body_modal_content_body_info_btns .wsp:focus {
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); }
-  .btn:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, .btn.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal_content_body_info_btns .disabled.wsp,
+  .btn:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal .cta_off:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, .btn.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal .disabled.cta_off, .pCard_body_modal_content_body_info_btns .disabled.wsp,
   fieldset:disabled .btn,
   fieldset:disabled .pCard_body_modal .cta,
   .pCard_body_modal fieldset:disabled .cta,
+  fieldset:disabled .pCard_body_modal .cta_off,
+  .pCard_body_modal fieldset:disabled .cta_off,
   fieldset:disabled .pCard_body_modal_content_body_info_btns .wsp,
   .pCard_body_modal_content_body_info_btns fieldset:disabled .wsp {
     pointer-events: none;
@@ -2466,24 +2470,26 @@ textarea.form-control-lg {
     color: #ffc107;
     background-color: transparent; }
 
-.btn-outline-danger {
+.btn-outline-danger, .pCard_body_modal .cta_off {
   color: #dc3545;
   border-color: #dc3545; }
-  .btn-outline-danger:hover {
+  .btn-outline-danger:hover, .pCard_body_modal .cta_off:hover {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545; }
-  .btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
+  .btn-check:focus + .btn-outline-danger, .pCard_body_modal .btn-check:focus + .cta_off, .btn-outline-danger:focus, .pCard_body_modal .cta_off:focus {
     box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5); }
-  .btn-check:checked + .btn-outline-danger,
-  .btn-check:active + .btn-outline-danger, .btn-outline-danger:active, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show {
+  .btn-check:checked + .btn-outline-danger, .pCard_body_modal .btn-check:checked + .cta_off,
+  .btn-check:active + .btn-outline-danger,
+  .pCard_body_modal .btn-check:active + .cta_off, .btn-outline-danger:active, .pCard_body_modal .cta_off:active, .btn-outline-danger.active, .pCard_body_modal .active.cta_off, .btn-outline-danger.dropdown-toggle.show, .pCard_body_modal .dropdown-toggle.show.cta_off {
     color: #fff;
     background-color: #dc3545;
     border-color: #dc3545; }
-    .btn-check:checked + .btn-outline-danger:focus,
-    .btn-check:active + .btn-outline-danger:focus, .btn-outline-danger:active:focus, .btn-outline-danger.active:focus, .btn-outline-danger.dropdown-toggle.show:focus {
+    .btn-check:checked + .btn-outline-danger:focus, .pCard_body_modal .btn-check:checked + .cta_off:focus,
+    .btn-check:active + .btn-outline-danger:focus,
+    .pCard_body_modal .btn-check:active + .cta_off:focus, .btn-outline-danger:active:focus, .pCard_body_modal .cta_off:active:focus, .btn-outline-danger.active:focus, .pCard_body_modal .active.cta_off:focus, .btn-outline-danger.dropdown-toggle.show:focus, .pCard_body_modal .dropdown-toggle.show.cta_off:focus {
       box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5); }
-  .btn-outline-danger:disabled, .btn-outline-danger.disabled {
+  .btn-outline-danger:disabled, .pCard_body_modal .cta_off:disabled, .btn-outline-danger.disabled, .pCard_body_modal .disabled.cta_off {
     color: #dc3545;
     background-color: transparent; }
 
@@ -2538,12 +2544,12 @@ textarea.form-control-lg {
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d; }
 
-.btn-lg, .btn-group-lg > .btn, .pCard_body_modal .btn-group-lg > .cta, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp {
+.btn-lg, .btn-group-lg > .btn, .pCard_body_modal .btn-group-lg > .cta, .pCard_body_modal .btn-group-lg > .cta_off, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, .pCard_body_modal .btn-group-sm > .cta, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp {
+.btn-sm, .btn-group-sm > .btn, .pCard_body_modal .btn-group-sm > .cta, .pCard_body_modal .btn-group-sm > .cta_off, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
@@ -2824,45 +2830,57 @@ textarea.form-control-lg {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, .pCard_body_modal .btn-group > .cta, .pCard_body_modal_content_body_info_btns .btn-group > .wsp,
+  .btn-group > .btn, .pCard_body_modal .btn-group > .cta, .pCard_body_modal .btn-group > .cta_off, .pCard_body_modal_content_body_info_btns .btn-group > .wsp,
   .btn-group-vertical > .btn,
   .pCard_body_modal .btn-group-vertical > .cta,
+  .pCard_body_modal .btn-group-vertical > .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp {
     position: relative;
     flex: 1 1 auto; }
-  .btn-group > .btn-check:checked + .btn, .pCard_body_modal .btn-group > .btn-check:checked + .cta, .pCard_body_modal_content_body_info_btns .btn-group > .btn-check:checked + .wsp,
+  .btn-group > .btn-check:checked + .btn, .pCard_body_modal .btn-group > .btn-check:checked + .cta, .pCard_body_modal .btn-group > .btn-check:checked + .cta_off, .pCard_body_modal_content_body_info_btns .btn-group > .btn-check:checked + .wsp,
   .btn-group > .btn-check:focus + .btn,
   .pCard_body_modal .btn-group > .btn-check:focus + .cta,
+  .pCard_body_modal .btn-group > .btn-check:focus + .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group > .btn-check:focus + .wsp,
   .btn-group > .btn:hover,
   .pCard_body_modal .btn-group > .cta:hover,
+  .pCard_body_modal .btn-group > .cta_off:hover,
   .pCard_body_modal_content_body_info_btns .btn-group > .wsp:hover,
   .btn-group > .btn:focus,
   .pCard_body_modal .btn-group > .cta:focus,
+  .pCard_body_modal .btn-group > .cta_off:focus,
   .pCard_body_modal_content_body_info_btns .btn-group > .wsp:focus,
   .btn-group > .btn:active,
   .pCard_body_modal .btn-group > .cta:active,
+  .pCard_body_modal .btn-group > .cta_off:active,
   .pCard_body_modal_content_body_info_btns .btn-group > .wsp:active,
   .btn-group > .btn.active,
   .pCard_body_modal .btn-group > .active.cta,
+  .pCard_body_modal .btn-group > .active.cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group > .active.wsp,
   .btn-group-vertical > .btn-check:checked + .btn,
   .pCard_body_modal .btn-group-vertical > .btn-check:checked + .cta,
+  .pCard_body_modal .btn-group-vertical > .btn-check:checked + .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-check:checked + .wsp,
   .btn-group-vertical > .btn-check:focus + .btn,
   .pCard_body_modal .btn-group-vertical > .btn-check:focus + .cta,
+  .pCard_body_modal .btn-group-vertical > .btn-check:focus + .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-check:focus + .wsp,
   .btn-group-vertical > .btn:hover,
   .pCard_body_modal .btn-group-vertical > .cta:hover,
+  .pCard_body_modal .btn-group-vertical > .cta_off:hover,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:hover,
   .btn-group-vertical > .btn:focus,
   .pCard_body_modal .btn-group-vertical > .cta:focus,
+  .pCard_body_modal .btn-group-vertical > .cta_off:focus,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:focus,
   .btn-group-vertical > .btn:active,
   .pCard_body_modal .btn-group-vertical > .cta:active,
+  .pCard_body_modal .btn-group-vertical > .cta_off:active,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:active,
   .btn-group-vertical > .btn.active,
   .pCard_body_modal .btn-group-vertical > .active.cta,
+  .pCard_body_modal .btn-group-vertical > .active.cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .active.wsp {
     z-index: 1; }
 
@@ -2873,23 +2891,26 @@ textarea.form-control-lg {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child), .pCard_body_modal .btn-group > .cta:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:first-child),
+.btn-group > .btn:not(:first-child), .pCard_body_modal .btn-group > .cta:not(:first-child), .pCard_body_modal .btn-group > .cta_off:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:first-child),
 .btn-group > .btn-group:not(:first-child) {
   margin-left: -1px; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group > .cta_off:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn,
 .pCard_body_modal .btn-group > .btn-group:not(:last-child) > .cta,
+.pCard_body_modal .btn-group > .btn-group:not(:last-child) > .cta_off,
 .pCard_body_modal_content_body_info_btns .btn-group > .btn-group:not(:last-child) > .wsp {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:nth-child(n + 3), .pCard_body_modal .btn-group > .cta:nth-child(n + 3), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:nth-child(n + 3),
+.btn-group > .btn:nth-child(n + 3), .pCard_body_modal .btn-group > .cta:nth-child(n + 3), .pCard_body_modal .btn-group > .cta_off:nth-child(n + 3), .pCard_body_modal_content_body_info_btns .btn-group > .wsp:nth-child(n + 3),
 .btn-group > :not(.btn-check) + .btn,
 .pCard_body_modal .btn-group > :not(.btn-check) + .cta,
+.pCard_body_modal .btn-group > :not(.btn-check) + .cta_off,
 .pCard_body_modal_content_body_info_btns .btn-group > :not(.btn-check) + .wsp,
 .btn-group > .btn-group:not(:first-child) > .btn,
 .pCard_body_modal .btn-group > .btn-group:not(:first-child) > .cta,
+.pCard_body_modal .btn-group > .btn-group:not(:first-child) > .cta_off,
 .pCard_body_modal_content_body_info_btns .btn-group > .btn-group:not(:first-child) > .wsp {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -2904,11 +2925,11 @@ textarea.form-control-lg {
   .dropstart .dropdown-toggle-split::before {
     margin-right: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-sm > .cta + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-sm > .cta + .dropdown-toggle-split, .pCard_body_modal .btn-group-sm > .cta_off + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-sm > .wsp + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-lg > .cta + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .pCard_body_modal .btn-group-lg > .cta + .dropdown-toggle-split, .pCard_body_modal .btn-group-lg > .cta_off + .dropdown-toggle-split, .pCard_body_modal_content_body_info_btns .btn-group-lg > .wsp + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2919,21 +2940,24 @@ textarea.form-control-lg {
   
   .btn-group-vertical > .btn,
   .pCard_body_modal .btn-group-vertical > .cta,
+  .pCard_body_modal .btn-group-vertical > .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp,
   .btn-group-vertical > .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn:not(:first-child), .pCard_body_modal .btn-group-vertical > .cta:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:first-child),
+  .btn-group-vertical > .btn:not(:first-child), .pCard_body_modal .btn-group-vertical > .cta:not(:first-child), .pCard_body_modal .btn-group-vertical > .cta_off:not(:first-child), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:first-child),
   .btn-group-vertical > .btn-group:not(:first-child) {
     margin-top: -1px; }
-  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group-vertical > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:last-child):not(.dropdown-toggle),
+  .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group-vertical > .cta:not(:last-child):not(.dropdown-toggle), .pCard_body_modal .btn-group-vertical > .cta_off:not(:last-child):not(.dropdown-toggle), .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp:not(:last-child):not(.dropdown-toggle),
   .btn-group-vertical > .btn-group:not(:last-child) > .btn,
   .pCard_body_modal .btn-group-vertical > .btn-group:not(:last-child) > .cta,
+  .pCard_body_modal .btn-group-vertical > .btn-group:not(:last-child) > .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-group:not(:last-child) > .wsp {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn ~ .btn, .pCard_body_modal .btn-group-vertical > .cta ~ .btn, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .btn, .pCard_body_modal .btn-group-vertical > .btn ~ .cta, .pCard_body_modal .btn-group-vertical > .cta ~ .cta, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn ~ .wsp, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .wsp,
+  .btn-group-vertical > .btn ~ .btn, .pCard_body_modal .btn-group-vertical > .cta ~ .btn, .pCard_body_modal .btn-group-vertical > .cta_off ~ .btn, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .btn, .pCard_body_modal .btn-group-vertical > .btn ~ .cta, .pCard_body_modal .btn-group-vertical > .cta ~ .cta, .pCard_body_modal .btn-group-vertical > .cta_off ~ .cta, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .cta, .pCard_body_modal .btn-group-vertical > .btn ~ .cta_off, .pCard_body_modal .btn-group-vertical > .cta ~ .cta_off, .pCard_body_modal .btn-group-vertical > .cta_off ~ .cta_off, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .wsp ~ .cta_off, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .cta_off, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn ~ .wsp, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .cta ~ .wsp, .pCard_body_modal .pCard_body_modal_content_body_info_btns .btn-group-vertical > .cta_off ~ .wsp, .pCard_body_modal_content_body_info_btns .pCard_body_modal .btn-group-vertical > .cta_off ~ .wsp, .pCard_body_modal_content_body_info_btns .btn-group-vertical > .wsp ~ .wsp,
   .btn-group-vertical > .btn-group:not(:first-child) > .btn,
   .pCard_body_modal .btn-group-vertical > .btn-group:not(:first-child) > .cta,
+  .pCard_body_modal .btn-group-vertical > .btn-group:not(:first-child) > .cta_off,
   .pCard_body_modal_content_body_info_btns .btn-group-vertical > .btn-group:not(:first-child) > .wsp {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
@@ -3615,7 +3639,7 @@ textarea.form-control-lg {
   .badge:empty {
     display: none; }
 
-.btn .badge, .pCard_body_modal .cta .badge, .pCard_body_modal_content_body_info_btns .wsp .badge {
+.btn .badge, .pCard_body_modal .cta .badge, .pCard_body_modal .cta_off .badge, .pCard_body_modal_content_body_info_btns .wsp .badge {
   position: relative;
   top: -1px; }
 
@@ -5338,7 +5362,7 @@ textarea.form-control-lg {
 .m-5 {
   margin: 3rem !important; }
 
-.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info .off, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
+.m-auto, .pCard .off, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
   margin: auto !important; }
 
 .mx-0 {
@@ -6317,9 +6341,9 @@ textarea.form-control-lg {
     margin: 0 !important; }
   .m-md-1 {
     margin: 0.25rem !important; }
-  .m-md-2 {
+  .m-md-2, .pCard {
     margin: 0.5rem !important; }
-  .m-md-3, .pCard {
+  .m-md-3 {
     margin: 1rem !important; }
   .m-md-4 {
     margin: 1.5rem !important; }
@@ -8949,7 +8973,7 @@ header .nav_body {
 .m-5 {
   margin: 3rem !important; }
 
-.m-auto, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info .off, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
+.m-auto, .pCard .off, .pCard_body_modal_content_body_info, .pCard_body_modal_content_body_info_btns, body .demo-hero-main-cont, body .demo-hero-main-cont-redes, main .showrooms #maincard {
   margin: auto !important; }
 
 .mx-0 {
@@ -9657,9 +9681,9 @@ header .nav_body {
     margin: 0 !important; }
   .m-md-1 {
     margin: 0.25rem !important; }
-  .m-md-2 {
+  .m-md-2, .pCard {
     margin: 0.5rem !important; }
-  .m-md-3, .pCard {
+  .m-md-3 {
     margin: 1rem !important; }
   .m-md-4 {
     margin: 1.5rem !important; }
@@ -10897,22 +10921,39 @@ ul {
     padding: 0.1rem 0.2rem; }
 
 .pCard {
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #fefffb; }
   .pCard:hover {
     box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.127);
     -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.12);
     -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.027); }
+  .pCard .off {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 2rem;
+    z-index: 3;
+    background: #ee2b2bcb;
+    border-radius: 0 5px 0 4px; }
+    .pCard .off p {
+      font-weight: 500;
+      margin: .6rem;
+      font-size: .8rem;
+      color: #FEFFF5; }
   .pCard_img {
     width: 180px;
     height: 150px;
     overflow: hidden;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    border-radius: 5px; }
     .pCard_img img {
       border-radius: 5px;
-      height: 180px; }
+      height: 160px; }
   .pCard_body {
-    background-color: #fefffb;
     width: 180px;
     height: 150px;
     padding: .5rem 1rem;
@@ -10923,6 +10964,34 @@ ul {
     .pCard_body .presentacion {
       font-size: .8rem;
       font-weight: 400; }
+    .pCard_body .precio {
+      font-size: 1.1rem;
+      color: #ff2929;
+      font-weight: 300;
+      line-height: normal; }
+      .pCard_body .precio span {
+        color: #8b8b8b;
+        font-size: .8rem;
+        text-decoration: line-through; }
+    .pCard_body .off {
+      right: -1rem;
+      width: auto;
+      height: 2rem;
+      border-radius: 4px 0 0 4px !important;
+      animation: off .7s ease-in-out; }
+      .pCard_body .off p {
+        font-weight: 300;
+        margin: .8rem;
+        font-size: 1rem;
+        color: #FEFFF5; }
+
+@keyframes off {
+  from {
+    transform-origin: right;
+    transform: scale(0); }
+  to {
+    transform: scale(1);
+    transform-origin: right; } }
     .pCard_body_txt {
       max-height: 100px; }
     .pCard_body h2, .pCard_body .h2 {
@@ -10957,6 +11026,13 @@ ul {
       font-family: "Montserrat", sans-serif; }
       .pCard_body_modal .cta:hover {
         color: #ceff80; }
+      .pCard_body_modal .cta_off {
+        width: 100%;
+        height: 1.8rem;
+        font-size: .7rem;
+        font-family: "Montserrat", sans-serif; }
+        .pCard_body_modal .cta_off:hover {
+          color: #FEFFF5; }
     .pCard_body_modal_content {
       padding: 1rem; }
       .pCard_body_modal_content .x_modal {
@@ -10977,43 +11053,12 @@ ul {
           border-radius: 5px;
           overflow: hidden; }
           .pCard_body_modal_content_body_carousel img {
-            height: 330px;
+            height: 300px;
             width: auto; }
         .pCard_body_modal_content_body_info {
           padding: 0rem 1rem;
           height: 350px;
           margin: 3rem; }
-          .pCard_body_modal_content_body_info .precio {
-            font-size: 1.1rem;
-            color: #ff2929;
-            font-weight: 300;
-            line-height: normal; }
-            .pCard_body_modal_content_body_info .precio span {
-              color: #8b8b8b;
-              font-size: .8rem;
-              text-decoration: line-through; }
-          .pCard_body_modal_content_body_info .off {
-            display: block;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            right: -1rem;
-            width: auto;
-            height: 2rem;
-            background: #ee2b2bcb;
-            border-radius: 4px 0 0 4px;
-            animation: off .7s ease-in-out; }
-            .pCard_body_modal_content_body_info .off p {
-              margin: .8rem;
-              color: #FEFFF5; }
-
-@keyframes off {
-  from {
-    transform-origin: right;
-    transform: scale(0); }
-  to {
-    transform: scale(1);
-    transform-origin: right; } }
           .pCard_body_modal_content_body_info p {
             line-height: .5; }
           .pCard_body_modal_content_body_info_title {
@@ -11086,6 +11131,15 @@ img {
   height: 3px;
   display: block;
   border-radius: 3px; }
+
+.sale {
+  border-bottom: #f04141 solid 1px !important; }
+  .sale h2, .sale .h2, .sale a, .sale p {
+    color: #f04141 !important; }
+    .sale h2 span, .sale .h2 span, .sale a span, .sale p span {
+      color: #e4afaf !important; }
+    .sale h2:hover, .sale .h2:hover, .sale a:hover, .sale p:hover {
+      color: #e4afaf !important; }
 
 body {
   background: #FEFFF5;
