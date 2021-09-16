@@ -11229,6 +11229,16 @@ header {
         background-color: #cadb2a;
         border-radius: 3px;
         padding-left: 5rem; }
+        header .nav_body_links .nav-sale {
+          background-color: #FEFFF5;
+          border-radius: 8px; }
+          header .nav_body_links .nav-sale a {
+            color: #ff6262; }
+          header .nav_body_links .nav-sale:hover {
+            background-color: #fff1f194;
+            transition: ease-out; }
+            header .nav_body_links .nav-sale:hover a {
+              color: #ff6262; }
         header .nav_body_links li:hover {
           color: #F2F2F2; }
         header .nav_body_links a {
