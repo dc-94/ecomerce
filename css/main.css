@@ -11585,7 +11585,7 @@ main {
       border: none;
       background-color: transparent !important; }
       .mainProductos #prodcat .products_card-body {
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap; }
   .mainProductos_head_title {
