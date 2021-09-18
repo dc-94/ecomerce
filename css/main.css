@@ -11058,10 +11058,10 @@ ul {
             width: auto; }
         .pCard_body_modal_content_body_info {
           padding: 0rem 1rem;
-          height: 350px;
+          height: 360px;
           margin: 3rem; }
           .pCard_body_modal_content_body_info p {
-            line-height: .5; }
+            line-height: 1; }
           .pCard_body_modal_content_body_info_title {
             padding: .5rem 0; }
             .pCard_body_modal_content_body_info_title h5, .pCard_body_modal_content_body_info_title .h5 {
