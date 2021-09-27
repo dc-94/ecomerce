@@ -5,7 +5,6 @@ if($_POST) {
     $visitor_tel  = "";
     $visitor_email = "";
     $email_title = "";
-    $concerned_department = "";
     $visitor_message = "";
      
     if(isset($_POST['visitor_name'])) {
@@ -25,36 +24,38 @@ if($_POST) {
         $email_title = filter_var($_POST['email_title'], FILTER_SANITIZE_STRING);
     }
      
-    if(isset($_POST['concerned_department'])) {
-        $concerned_department = filter_var($_POST['concerned_department'], FILTER_SANITIZE_STRING);
-    }
      
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
     }
      
-    if($concerned_department == "centro") {
-        $recipient = "dan.c94@outlook.com";
-    }
-    else if($concerned_department == "deposito") {
-        $recipient = "dan.c94@outlook.com";
-    }
-    else {
-        $recipient = "dan.c94@outlook.com";
-    }
      
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $visitor_email . "\r\n";
-     
-    if(mail($recipient, $email_title, $visitor_message, $headers)) {
-        echo "<p>Thank you for contacting us, $visitor_name. You will get a reply within 24 hours.</p>";
+    .'From: ' . $visitor_email . "\r\n"
+    .'Reply-To: ' . $visitor_email . "\r\n";
+    $returnpath = '-f mr.d413@yahoo.com' ;
+    $msg = '
+    <html>
+        <body>
+            <table width="100%" border="0">
+                <tr><td><strong>Nombre:</strong></td><td>' . $visitor_name . '</td></tr>
+                <tr><td><strong>Teléfono:</strong></td><td>' . $visitor_tel . '</td></tr>
+                <tr><td><strong>Email:</strong></td><td>' . $visitor_email . '</td></tr>
+                <tr><td><strong>Consulta:</strong></td><td>' . $visitor_message . '</td></tr>
+            </table>
+        </body>
+    </html>';
+    if(mail($recipient, $email_title, $msg, $headers, $returnpath)) {
+        echo "<script>alert('Gracias por escribirnos $visitor_name. Te contactaremos a la brevedad.');</script>";
+        echo "<script type='text/javascript'>window.location.href='http://www.imfloors.com.ar/contact.html'</script>";
+
     } else {
-        echo '<p>We are sorry but the email did not go through.</p>';
+        echo "<script>alert('Hubo un error, intentalo de nuevo.');</script>";
     }
      
 } else {
-    echo '<p>Something went wrong</p>';
+    echo "<script>alert('Hubo un error, intentalo de nuevo.');</script>";
 }
  
 ?>
