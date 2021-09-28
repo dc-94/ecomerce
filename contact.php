@@ -34,7 +34,7 @@ if($_POST) {
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n"
     .'Reply-To: ' . $visitor_email . "\r\n";
-    $returnpath = '-f mr.d413@yahoo.com' ;
+    $returnpath = 'mr.d413@yahoo.com' ;
     $msg = '
     <html>
         <body>
