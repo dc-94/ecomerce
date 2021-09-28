@@ -5,7 +5,7 @@ class cardS extends HTMLElement {
         this.titulo;
         this.desc;
         this.preciod;
-        this.precion;
+        this.categoria;
         this.off;
         this.formato;
         this.mxcj;
@@ -17,7 +17,7 @@ class cardS extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['titulo',"prodnum", "mxcj", "desc", "precion", "preciod", "off", "marca", "material", "uso", "formato", "src1", "src2"];
+        return ['titulo',"prodnum", "mxcj", "desc", "categoria", "preciod", "off", "marca", "material", "uso", "formato", "src1", "src2"];
     }
 
     attributeChangedCallback(tituloAttr, oldValue, newValue) {
@@ -34,8 +34,8 @@ class cardS extends HTMLElement {
             case "desc":
                 this.desc = newValue;
                 break;
-            case "precion":
-                this.precion = newValue;
+            case "categoria":
+                this.categoria = newValue;
                 break;
             case "preciod":
                 this.preciod = newValue;
@@ -69,17 +69,17 @@ class cardS extends HTMLElement {
         <div class="pCard ">
         <div class="pCard_img">
           <div id="${this.prodnum}" class="carousel slide" data-bs-ride="carousel">
-        <div class="off"><p>-${this.off}% OFF</p></div>
+        <div class="off"><p>SALE!</p></div>
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../productos/img/${this.src1}" class="-block w-100" alt="${this.titulo}">
+                <img src="${this.src1}" class="-block w-100" alt="${this.titulo}">
               </div>
               <div class="carousel-item">
-                <img src="../productos/img/${this.src2}" class="d-block w-100" alt="${this.titulo}">
+                <img src="${this.src2}" class="d-block w-100" alt="${this.titulo}">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#${this.prodnum}" data-bs-slide="prev">
@@ -95,7 +95,8 @@ class cardS extends HTMLElement {
         <div class="pCard_body">
           <div class="pCard_body_txt">
             <h3>${this.titulo}</h3>
-            <p class="precio ps-3"><span> ${this.precion}</span> <br> ${this.preciod}</p>
+            <p class="ps-1">${this.categoria}</p>
+            <p class="precio ps-3">${this.preciod}</p>
           </div>
           <div class="pCard_body_modal">
           
@@ -120,10 +121,10 @@ class cardS extends HTMLElement {
                       </div>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="../productos/img/${this.src1}" class="d-block w-100" alt="${this.titulo}">
+                          <img src="${this.src1}" class="d-block w-100" alt="${this.titulo}">
                         </div>
                         <div class="carousel-item">
-                          <img src="../productos/img/${this.src2}" class="d-block w-100" alt="${this.titulo}">
+                          <img src="${this.src2}" class="d-block w-100" alt="${this.titulo}">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#${this.prodnum}2" data-bs-slide="prev">
@@ -139,11 +140,12 @@ class cardS extends HTMLElement {
 
                   <div class="pCard_body_modal_content_body_info">
                     <div class="pCard_body_modal_content_body_info_title">
+                      <p> ${this.categoria}</p>
                       <h5 class="modal-title" id="${this.prodnum}1Label">${this.titulo}</h5>
                     </div>
                     <div class="pCard_body_modal_content_body_info_txt">
-                      <div class="off"><p>-${this.off}% OFF</p></div>
-                      <p class="precio">${this.preciod} <br> <span> ${this.precion}</span></p>
+                      <div class="off"><p>SALE!</p></div>
+                      <p class="precio">${this.preciod} </p>
                       <hr class="dropdown-divider">
                       <p class="presentacion">Detalles:</p>
                       <p>${this.desc}</p>

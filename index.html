@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Nos especializamos en pisos de alta gama.">
     <link rel="shortcut icon" href="imfloors-icofavicon.png" type="image/png">
+    <meta name="theme-color" content="#cadb2a">
     
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -14,9 +15,9 @@
     <!-- ICONS-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- CSS only -->
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="/card.js"></script>
-        <script src="/card-sale.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="card.js"></script>
+        <script src="card-sale.js"></script>
         <script src="https://unpkg.com/scrollreveal@4"></script>
     <title>IM Floors Rosario</title>
 </head>
@@ -25,7 +26,7 @@
         <nav class="navbar navbar-expand-md nav">
             <div class="nav_body">
               <a class="navbar-brand nav_body_brand" href="index.html">
-                  <img src="./img/imfloors-logo.svg" alt="IM Floors logo">
+                  <img src="img/imfloors-logo.svg" alt="IM Floors logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><i class="ri-menu-4-fill"></i>
               </button>
@@ -41,18 +42,21 @@
                       Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="/productos/accesorios.html">Accesorios</a></li>
-                      <li><a class="dropdown-item" href="/productos/flotantes.html">Pisos Flotantes</a></li>
-                      <li><a class="dropdown-item" href="/productos/cesped.html">Cesped Sintético</a></li>
-                      <li><a class="dropdown-item" href="/productos/decks-rev.html">Decks - Rev. de Pared</a></li>
-                      <li><a class="dropdown-item" href="/productos/waterproof-p.html">Waterproof</a></li>
+                      <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                      <li><a class="dropdown-item" href="cesped.html">Cesped Sintético</a></li>
+                      <li><a class="dropdown-item" href="decks-rev.html">Decks - Rev. de Pared</a></li>
+                      <li><a class="dropdown-item" href="p-flotantes.html">Pisos Flotantes</a></li>
+                      <li><a class="dropdown-item" href="p-goma.html">Pisos de Goma - PVC</a></li>
+                      <li><a class="dropdown-item" href="p-goma.html">Pisos de Madera</a></li>
+                      <li><a class="dropdown-item" href="porcelanatos-gres.html">Porcelanatos- Gres</a></li>
+                      <li><a class="dropdown-item" href="waterproof-p.html">Waterproof</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item nav-sale">
-                    <a class="nav-link "  href="../productos/sale.html">Sale</a>
+                  <li class="nav-item ">
+                    <a class="nav-link nav-sale"  href="sale.html">Sale</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#videos">Videos</a>
+                    <a class="nav-link" href="index.html#videos">Videos</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="showrooms.html">Showrooms</a>
@@ -126,14 +130,19 @@
                 </div>
                   <!--CARDS PRODUCTOS-->
                 <div class="main_section2_B">
-                    <tarjeta-comp prodnum=	"RPAV00262900N"	titulo=	"Revestimiento de pared – Walnut"	desc=	"26mm x 219mm x 2900mm"	formato=	"caja"	mxcj=	"0,58"	precioc=	"$5.177,76"	preciom=	"$8.927,17"	src1="deckwallrevest/	wall-panel-walnut/walnut1.jpg"	src2="deckwallrevest/	wall-panel-walnut/walnut2.jpg"> </tarjeta-comp>												
-                    <tarjeta-comp 	prodnum=	"VIAV005210000"	titulo=	"Revestimiento – Viga Co Extruded Teka 52"	desc=	"52mm x 100mm x 2900mm"	formato=	"unidad"	mxcj=	" "	precioc=	"$5.308,09"	preciom=	" "	src1="deckwallrevest/	vigateka52/viga1.jpg"	src2="deckwallrevest/	vigateka52/viga2.jpg"	></tarjeta-comp>															
-                    <tarjeta-comp 	prodnum=	"RPAV00262900G"	titulo=	"Rev. de pared – Wall Panel Silver Grey"	desc=	"26mm x 219mm x 2900mm"	formato=	"unidad"	mxcj=	"0,58m2"	precioc=	"$5.177,76"	preciom=	"$8.927,17"	src1="deckwallrevest/	wallpanelsilvergray/wall1.jpg"	src2="deckwallrevest/	wallpanelsilvergray/wall2.jpg"	></tarjeta-comp>														
-                    <tarjeta-comp 	prodnum=	"PVHL000000A94"	titulo=	"Nougat A94"	desc=	"15,2cmx91,4cm. Espesor 2mm"	formato=	"caja"	mxcj=	"3,3445m2"	precioc=	"$5.343,78"	preciom=	"$1.597,78"	src1="flotantes/		" src2="flotantes/		"></tarjeta-comp>															
+
+                    <tarjeta-comp 	prodnum=	"PA20000DECK01" titulo= "	Deck Blanco	" desc= "	Espesor: 10,5mm - Ancho: 23 cm – Largo: 120 cm	" formato= "	Caja x 5 piezas	" mxcj= "	1,38	" marca="	-	" material="	Porcelanato	" uso="	Interior / Exterior	" src1=" 	https://vigorita.com.ar/media/2021/06/Deck-Blanco-tabla-5-510x510.jpg	" src2="	https://vigorita.com.ar/media/2021/06/Deck-Blanco-Refe-510x430.jpg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"DELADI2012465"	titulo=	"Deck – Lapacho (IPE) Macizo Madera Natural"	desc=	"20mm x 100mm x 2465mm"	formato=	"unidad"	mxcj=	"1"	 marca="	-	" material="	PVC, Fibras de madera, Coating protector de recubrimiento	" uso="	Exterior / Interior	" src1= "	https://vigorita.com.ar/media/2021/06/Lapacho-Macizo-3-510x510.jpeg	"src2="	https://vigorita.com.ar/media/2021/06/Lapacho-Macizo-510x383.jpeg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"RVHLORGW18210"	titulo=	"Cacao Puro ORGW18210 - 2mm	" desc= "	Espesor: 2mm – Capa de uso: 0.3mm – Ancho: 152,4 – Largo: 1219,2 mm	" formato= "	Caja	" mxcj= "	3,34	" marca="	-	" material="	100% PVC	" uso="	Interior: Residencial/Comercial	" src1=" 	https://vigorita.com.ar/media/2021/06/CACAO-PURO-3-scaled-1-510x685.jpg	" src2="	https://vigorita.com.ar/media/2021/06/CACAO-PURO-1-510x510.jpg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"BAAV300211000"	titulo=	"Deck – Baldosa Co Extruded Antique"	desc=	"300mm x 300mmm x 21mm"	formato=	"caja"	mxcj=	"0.99"	 marca="	-	" material="	PVC, Fibras de madera, Coating protector de recubrimiento	" uso="	Exterior / Interior	" src1= "	https://vigorita.com.ar/media/2021/07/BaldosaAntiqueArmado-a-510x510.jpg	"src2="	https://vigorita.com.ar/media/2021/07/54c1eb3f04b6e813_1485-w312-h312-b0-p0-modern-spaces.jpg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"BAAV300215000"	titulo=	"Deck – Baldosa Co Extruded Teka"	desc=	"300mm x 300mmm x 21mm"	formato=	"caja"	mxcj=	"0.99"	 marca="	-	" material="	PVC, Fibras de madera, Coating protector de recubrimiento	" uso="	Exterior / Interior	" src1= "	https://vigorita.com.ar/media/2021/07/8157a34fb9ee2dd7bd9b9960fdfb05d8-510x510.jpg"	src2="https://vigorita.com.ar/media/2021/07/home-design-510x340.jpg	" ></tarjeta-comp>		
+                    <tarjeta-comp 	prodnum=	"PVHL000608716"	 titulo= "	Tours 608716 4/0.3	" desc= "	Espesor: 4mm – Capa de uso: 0.3mm – Ancho: 180mm – Largo: 1220mm	" formato= "	Caja	" mxcj= "	3,07	" marca="	-	" material="	100% PVC	" uso="	Interior: Residencial/Comercial	" src1=" 	https://vigorita.com.ar/media/2021/06/Tours-608716-3-510x572.jpg	" src2="	https://vigorita.com.ar/media/2021/06/Tours-608716-510x511.jpg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"RVHL0ORGW2572"	titulo=	"Arena ORGW2572 - 2mm	" desc= "	Espesor: 2mm – Capa de uso: 0.3mm – Ancho: 152,4 – Largo: 1219,2 mm	" formato= "	Caja	" mxcj= "	3,34	" marca="	-	" material="	100% PVC	" uso="	Interior: Residencial/Comercial	" src1=" 	https://vigorita.com.ar/media/2021/06/ARENA-1-510x680.jpeg	" src2="	https://vigorita.com.ar/media/2021/06/ARENA-2-510x680.jpeg	" ></tarjeta-comp>
+                    <tarjeta-comp 	prodnum=	"ALGC028011004"	" titulo= "	Otoño Largo Soft 	" desc= "	1m x 10m	" formato= "	rollo	" mxcj= "	10	" marca="	-	" material="	Fibras sintécticas teñidas en masa, Backing de latex micro perforado	" uso="	Exterior, Interior	" src1=" 	https://vigorita.com.ar/media/2021/06/Cesped-Sintetico-Rollo-10M2-Otono-Largo-1.jpg	" src2="	https://vigorita.com.ar/media/2021/06/Cesped-Sintetico-Otono-Largo-Soft-Mega-10.jpg	" ></tarjeta-comp>	
                 </div>
         <!--btn -->
                 <div class="main_section2_C">
-                    <a href="/productos/decks-rev.html" type="button" class="main_section2_C_btn btn btn-outline-success">Catálogo de productos</a>
+                    <a href="decks-rev.html" type="button" class="main_section2_C_btn "> Catálogo de productos</a>
                 </div>
             </div>
 <!-- SALE-->
@@ -141,11 +150,11 @@
                 <div class="main_section3_A">
                     <h2>SALE!!!</h2>
                     <p>Disfruta nuestras promociones por tiempo limitado!!!</p>
-                    <a  href="/productos/sale.html"> Conocé todas las ofertas</a>
+                    <a  href="sale.html"> Conocé todas las ofertas</a>
                 </div>
-                <div class="main_section3_B" >												
-                    <tarjeta-sale off="34"	prodnum=	"VIAV00d5210000"	titulo=	"Revestimiento – Viga Co Extruded Teka 52"	desc=	"52mm x 100mm x 2900mm"	formato=	"unidad"	mxcj=	"- "	precioc=	"$5.308,09"	preciom=	" "	src1="deckwallrevest/	vigateka52/viga1.jpg"	src2="deckwallrevest/	vigateka52/viga2.jpg"	></tarjeta-sale>															
-                    <tarjeta-sale 	prodnum=	"RPAV00d262900G"	titulo=	"Rev. de pared – Wall Panel Silver Grey"	desc=	"26mm x 219mm x 2900mm"	formato=	"unidad"	mxcj=	"0,58"	precioc=	"$5.177,76"	preciom=	"$8.927,17"	src1="deckwallrevest/	wallpanelsilvergray/wall1.jpg"	src2="deckwallrevest/	wallpanelsilvergray/wall2.jpg"	></tarjeta-sale>
+                <div class="main_section3_B" >	
+                    <tarjeta-sale prodnum=	"C2SU070718679"	 titulo="	Pino Coffee L8679 AC3	" desc= "	Espesor: 7mm – Ancho: 193mm – Largo: 1380mm	" preciod="	$1.890	" categoria= "	Pisos Flotantes	" formato="	Caja	" mxcj="	2,4	" marca="	KronoSwiss	" material="	Estructura HDF, Papel Decorativo, Capa Overlay, Base de estabilización	" uso="	Interior: Residencial	" src1="	https://vigorita.com.ar/media/2021/06/Pisos-Flotantes-Swissfloor-de-7mm-L8679-Pino-Coffee-Ambientacion-1-510x340.jpg	" src2="	https://vigorita.com.ar/media/2021/06/Pisos-Flotantes-Swissfloor-de-7mm-L8679-Pino-Coffee-Ambientacion-2.jpg	" ></tarjeta-sale>
+                    <tarjeta-sale prodnum=	"C2SU080104659"	 titulo="	Montpellier D4659 AC4	" desc= "	Espesor: 8mm – Ancho: 193mm – Largo: 1380mm	" preciod="	$2.350	" categoria= "	Pisos Flotantes	" formato="	Caja	" mxcj="	2,13	" marca="	Origen Suizo	" material="	Estructura HDF, Papel Decorativo, Capa Overlay, Base de estabilización	" uso="	Interior: Comercial	" src1="	https://vigorita.com.ar/media/2021/06/9436F89D-A8DE-4232-9142-84906AECC023-510x680.jpeg	" src2="	https://vigorita.com.ar/media/2021/06/7F51AC0D-C54F-4005-BB5B-C62C686DF8ED-510x341.jpeg	" ></tarjeta-sale>
                 </div>
             </div>
 <!-- VIDEOS-->
