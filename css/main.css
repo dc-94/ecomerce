@@ -2193,42 +2193,38 @@ main .input-group-sm > .main_section2_C_btn {
     background-color: #6c757d;
     border-color: #6c757d; }
 
-.btn-success, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp, main .main_section2_C_btn {
+.btn-success, .pCard_body_modal .cta, .pCard_body_modal_content_body_info_btns .wsp {
   color: #fff;
   background-color: #198754;
   border-color: #198754; }
-  .btn-success:hover, .pCard_body_modal .cta:hover, .pCard_body_modal_content_body_info_btns .wsp:hover, main .main_section2_C_btn:hover {
+  .btn-success:hover, .pCard_body_modal .cta:hover, .pCard_body_modal_content_body_info_btns .wsp:hover {
     color: #fff;
     background-color: #157347;
     border-color: #146c43; }
-  .btn-check:focus + .btn-success, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, main .btn-check:focus + .main_section2_C_btn, .btn-success:focus, .pCard_body_modal .cta:focus, .pCard_body_modal_content_body_info_btns .wsp:focus, main .main_section2_C_btn:focus {
+  .btn-check:focus + .btn-success, .pCard_body_modal .btn-check:focus + .cta, .pCard_body_modal_content_body_info_btns .btn-check:focus + .wsp, .btn-success:focus, .pCard_body_modal .cta:focus, .pCard_body_modal_content_body_info_btns .wsp:focus {
     color: #fff;
     background-color: #157347;
     border-color: #146c43;
     box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5); }
-  .btn-check:checked + .btn-success, .pCard_body_modal .btn-check:checked + .cta, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp, main .btn-check:checked + .main_section2_C_btn,
+  .btn-check:checked + .btn-success, .pCard_body_modal .btn-check:checked + .cta, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp,
   .btn-check:active + .btn-success,
   .pCard_body_modal .btn-check:active + .cta,
-  .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp,
-  main .btn-check:active + .main_section2_C_btn, .btn-success:active, .pCard_body_modal .cta:active, .pCard_body_modal_content_body_info_btns .wsp:active, main .main_section2_C_btn:active, .btn-success.active, .pCard_body_modal .active.cta, .pCard_body_modal_content_body_info_btns .active.wsp, main .active.main_section2_C_btn,
+  .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp, .btn-success:active, .pCard_body_modal .cta:active, .pCard_body_modal_content_body_info_btns .wsp:active, .btn-success.active, .pCard_body_modal .active.cta, .pCard_body_modal_content_body_info_btns .active.wsp,
   .show > .btn-success.dropdown-toggle,
   .pCard_body_modal .show > .dropdown-toggle.cta,
-  .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp,
-  main .show > .dropdown-toggle.main_section2_C_btn {
+  .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp {
     color: #fff;
     background-color: #146c43;
     border-color: #13653f; }
-    .btn-check:checked + .btn-success:focus, .pCard_body_modal .btn-check:checked + .cta:focus, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp:focus, main .btn-check:checked + .main_section2_C_btn:focus,
+    .btn-check:checked + .btn-success:focus, .pCard_body_modal .btn-check:checked + .cta:focus, .pCard_body_modal_content_body_info_btns .btn-check:checked + .wsp:focus,
     .btn-check:active + .btn-success:focus,
     .pCard_body_modal .btn-check:active + .cta:focus,
-    .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp:focus,
-    main .btn-check:active + .main_section2_C_btn:focus, .btn-success:active:focus, .pCard_body_modal .cta:active:focus, .pCard_body_modal_content_body_info_btns .wsp:active:focus, main .main_section2_C_btn:active:focus, .btn-success.active:focus, .pCard_body_modal .active.cta:focus, .pCard_body_modal_content_body_info_btns .active.wsp:focus, main .active.main_section2_C_btn:focus,
+    .pCard_body_modal_content_body_info_btns .btn-check:active + .wsp:focus, .btn-success:active:focus, .pCard_body_modal .cta:active:focus, .pCard_body_modal_content_body_info_btns .wsp:active:focus, .btn-success.active:focus, .pCard_body_modal .active.cta:focus, .pCard_body_modal_content_body_info_btns .active.wsp:focus,
     .show > .btn-success.dropdown-toggle:focus,
     .pCard_body_modal .show > .dropdown-toggle.cta:focus,
-    .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp:focus,
-    main .show > .dropdown-toggle.main_section2_C_btn:focus {
+    .pCard_body_modal_content_body_info_btns .show > .dropdown-toggle.wsp:focus {
       box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5); }
-  .btn-success:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, main .main_section2_C_btn:disabled, .btn-success.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal_content_body_info_btns .disabled.wsp, main .disabled.main_section2_C_btn {
+  .btn-success:disabled, .pCard_body_modal .cta:disabled, .pCard_body_modal_content_body_info_btns .wsp:disabled, .btn-success.disabled, .pCard_body_modal .disabled.cta, .pCard_body_modal_content_body_info_btns .disabled.wsp {
     color: #fff;
     background-color: #198754;
     border-color: #198754; }
@@ -2415,24 +2411,26 @@ main .input-group-sm > .main_section2_C_btn {
     color: #6c757d;
     background-color: transparent; }
 
-.btn-outline-success {
+.btn-outline-success, main .main_section2_C_btn {
   color: #198754;
   border-color: #198754; }
-  .btn-outline-success:hover {
+  .btn-outline-success:hover, main .main_section2_C_btn:hover {
     color: #fff;
     background-color: #198754;
     border-color: #198754; }
-  .btn-check:focus + .btn-outline-success, .btn-outline-success:focus {
+  .btn-check:focus + .btn-outline-success, main .btn-check:focus + .main_section2_C_btn, .btn-outline-success:focus, main .main_section2_C_btn:focus {
     box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5); }
-  .btn-check:checked + .btn-outline-success,
-  .btn-check:active + .btn-outline-success, .btn-outline-success:active, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show {
+  .btn-check:checked + .btn-outline-success, main .btn-check:checked + .main_section2_C_btn,
+  .btn-check:active + .btn-outline-success,
+  main .btn-check:active + .main_section2_C_btn, .btn-outline-success:active, main .main_section2_C_btn:active, .btn-outline-success.active, main .active.main_section2_C_btn, .btn-outline-success.dropdown-toggle.show, main .dropdown-toggle.show.main_section2_C_btn {
     color: #fff;
     background-color: #198754;
     border-color: #198754; }
-    .btn-check:checked + .btn-outline-success:focus,
-    .btn-check:active + .btn-outline-success:focus, .btn-outline-success:active:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus {
+    .btn-check:checked + .btn-outline-success:focus, main .btn-check:checked + .main_section2_C_btn:focus,
+    .btn-check:active + .btn-outline-success:focus,
+    main .btn-check:active + .main_section2_C_btn:focus, .btn-outline-success:active:focus, main .main_section2_C_btn:active:focus, .btn-outline-success.active:focus, main .active.main_section2_C_btn:focus, .btn-outline-success.dropdown-toggle.show:focus, main .dropdown-toggle.show.main_section2_C_btn:focus {
       box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5); }
-  .btn-outline-success:disabled, .btn-outline-success.disabled {
+  .btn-outline-success:disabled, main .main_section2_C_btn:disabled, .btn-outline-success.disabled, main .disabled.main_section2_C_btn {
     color: #198754;
     background-color: transparent; }
 
@@ -5184,7 +5182,7 @@ main .btn-group > .btn-group:not(:first-child) > .main_section2_C_btn {
 .w-75 {
   width: 75% !important; }
 
-.w-100, .pCard_body_modal_content_body_carousel, .pCard_body_modal_content_body_info, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B {
+.w-100, .pCard_body_modal_content_body_carousel, .pCard_body_modal_content_body_info, main .main_section1_A_txt, main .main_section1_A_fill, main .main_section3_B, main .main_section4_full_vid video {
   width: 100% !important; }
 
 .w-auto {
@@ -5919,7 +5917,7 @@ main .btn-group > .btn-group:not(:first-child) > .main_section2_C_btn {
     display: table-row !important; }
   .d-sm-table-cell {
     display: table-cell !important; }
-  .d-sm-flex, .mainProductos #prodcat .products_card-body {
+  .d-sm-flex, main .main_section4_full_vid, .mainProductos #prodcat .products_card-body {
     display: flex !important; }
   .d-sm-inline-flex {
     display: inline-flex !important; }
@@ -9295,7 +9293,7 @@ header .nav_body {
     display: table-row !important; }
   .d-sm-table-cell {
     display: table-cell !important; }
-  .d-sm-flex, .mainProductos #prodcat .products_card-body {
+  .d-sm-flex, main .main_section4_full_vid, .mainProductos #prodcat .products_card-body {
     display: flex !important; }
   .d-sm-inline-flex {
     display: inline-flex !important; }
@@ -11308,12 +11306,13 @@ main {
         background-blend-mode: difference; }
         main .main_section1_A_txt p {
           font-family: "Montserrat", sans-serif;
-          font-weight: 400;
+          font-weight: 300;
           color: #FEFFF5;
           font-size: 1.5rem;
           text-align: center; }
           main .main_section1_A_txt p span {
-            font-size: 5rem;
+            font-size: 4.8rem;
+            text-transform: uppercase;
             font-family: "Montserrat", sans-serif;
             font-weight: 100; }
     main .main_section1_B {
@@ -11356,10 +11355,13 @@ main {
       display: flex;
       justify-content: center; }
       main .main_section2_C_btn {
-        font-size: .8rem; }
+        font-size: .8rem;
+        border-radius: 8px; }
         main .main_section2_C_btn:hover {
           background-color: #83b81b;
-          border: none; }
+          font-size: .8rem;
+          border: #83b81b solid 1px;
+          transition: ease-in-out .3s; }
   main .main_section3 {
     padding: 5rem 3rem;
     margin-top: 2rem;
@@ -11416,11 +11418,10 @@ main {
         padding-left: .5rem;
         border-radius: 2px; }
       main .main_section4_full_vid {
-        display: flex;
-        justify-content: center; }
+        justify-content: center;
+        align-items: center; }
         main .main_section4_full_vid video {
-          padding: 1rem 2rem;
-          height: 450px; }
+          height: 500px; }
   main .contact {
     padding-top: 1.5rem;
     margin-bottom: 4rem; }
@@ -11562,6 +11563,15 @@ main {
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             content: '\eef3';
+            position: relative;
+            left: -5px;
+            padding-left: 1.5rem; }
+          main .showrooms_card-body_main-info .wsp::before {
+            font-family: 'remixicon';
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: '\f2bc';
             position: relative;
             left: -5px;
             padding-left: 1.5rem; }
