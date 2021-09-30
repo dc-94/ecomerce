@@ -11241,13 +11241,20 @@ header {
     header .nav_body {
       align-self: center;
       justify-content: space-around; }
+      header .nav_body button {
+        color: #FEFFF5; }
+        header .nav_body button i {
+          font-size: 1.5rem; }
       header .nav_body_links {
         background-color: #cadb2a;
-        border-radius: 3px;
-        padding-left: 5rem; }
+        border-radius: 8px;
+        padding-left: 4rem; }
+        header .nav_body_links .nav-link, header .nav_body_links .mainProductos_head_categorias_body_item_main {
+          padding: .4rem; }
         header .nav_body_links .nav-sale {
           background-color: #FEFFF5;
           border-radius: 8px;
+          width: fit-content;
           color: #ff6262; }
           header .nav_body_links .nav-sale:hover {
             background-color: #76917794;
@@ -11266,12 +11273,14 @@ header {
           border: none; }
           header .nav_body_links .dropdown-menu .dropdown-item:hover {
             background: none; }
-      header .nav_body_redes a {
-        font-size: 1.5rem;
-        color: #383838;
-        padding: 0.5rem; }
-        header .nav_body_redes a:hover {
-          color: #F2F2F2; }
+      header .nav_body_redes {
+        justify-content: space-around;
+        align-items: center; }
+        header .nav_body_redes a {
+          font-size: 1.5rem;
+          color: #383838; }
+          header .nav_body_redes a:hover {
+            color: #F2F2F2; }
     header .nav img, header .mainProductos_head_categorias img {
       height: 45px; }
 
@@ -11696,7 +11705,7 @@ main {
 footer {
   width: 100%;
   margin-top: 4rem;
-  background-color: #8b8b8b; }
+  background-color: #383838; }
   footer .footer {
     padding: 2rem; }
     footer .footer_section {

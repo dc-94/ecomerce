@@ -28,13 +28,11 @@ if($_POST) {
     if(isset($_POST['visitor_message'])) {
         $visitor_message = htmlspecialchars($_POST['visitor_message']);
     }
-     
-     
+    $to = 'contacto@imfloors.com.ar';
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $visitor_email . "\r\n"
     .'Reply-To: ' . $visitor_email . "\r\n";
-    $returnpath = 'mr.d413@yahoo.com' ;
     $msg = '
     <html>
         <body>
@@ -46,7 +44,7 @@ if($_POST) {
             </table>
         </body>
     </html>';
-    if(mail($recipient, $email_title, $msg, $headers, $returnpath)) {
+    if(mail($to, $email_title, $msg, $headers, $returnpath)) {
         echo "<script>alert('Gracias por escribirnos $visitor_name. Te contactaremos a la brevedad.');</script>";
         echo "<script type='text/javascript'>window.location.href='http://www.imfloors.com.ar/contact.html'</script>";
 
