@@ -66,7 +66,7 @@ class cardS extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <div class="pCard ">
+        <div class="pCard prod-card">
         <div class="pCard_img">
           <div id="${this.prodnum}" class="carousel slide" data-bs-ride="carousel">
         <div class="off"><p>SALE!</p></div>
