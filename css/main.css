@@ -5020,7 +5020,7 @@ main .btn-group > .btn-group:not(:first-child) > .main_section2_C_btn {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .main_section4_full_vid, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5917,7 +5917,7 @@ main .btn-group > .btn-group:not(:first-child) > .main_section2_C_btn {
     display: table-row !important; }
   .d-sm-table-cell {
     display: table-cell !important; }
-  .d-sm-flex, main .main_section4_full_vid, .mainProductos #prodcat .products_card-body {
+  .d-sm-flex, .mainProductos #prodcat .products_card-body {
     display: flex !important; }
   .d-sm-inline-flex {
     display: inline-flex !important; }
@@ -8841,7 +8841,7 @@ header .nav_body {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
+.d-flex, .pCard, header .nav_body, main .main_section1_A, main .main_section1_A_txt, main .main_section4_full_vid, main .contact_header, main .contact_header_redes, footer .footer, footer .footer_section_logo, footer .footer_section_logo_redes, footer .footer_section_local_main, footer .footer_section_local_main_info {
   display: flex !important; }
 
 .d-inline-flex {
@@ -9293,7 +9293,7 @@ header .nav_body {
     display: table-row !important; }
   .d-sm-table-cell {
     display: table-cell !important; }
-  .d-sm-flex, main .main_section4_full_vid, .mainProductos #prodcat .products_card-body {
+  .d-sm-flex, .mainProductos #prodcat .products_card-body {
     display: flex !important; }
   .d-sm-inline-flex {
     display: inline-flex !important; }
@@ -11433,7 +11433,7 @@ main {
         align-items: center;
         flex-wrap: wrap; }
         main .main_section4_full_vid video {
-          height: 500px;
+          height: 400px;
           padding: 0 .5rem 1rem .5rem; }
   main .contact {
     padding-top: 1.5rem;
