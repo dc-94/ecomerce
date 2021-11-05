@@ -10988,12 +10988,14 @@ ul {
     justify-content: space-between; }
     .pCard_body .presentacion {
       font-size: .8rem;
-      font-weight: 400; }
+      font-weight: 400;
+      line-height: 0;
+      padding-top: .5rem; }
     .pCard_body .precio {
       font-size: 1.1rem;
       color: #ff2929;
       font-weight: 300;
-      line-height: normal; }
+      line-height: 0; }
       .pCard_body .precio span {
         color: #8b8b8b;
         font-size: .8rem;
@@ -11018,7 +11020,7 @@ ul {
     transform: scale(1);
     transform-origin: right; } }
     .pCard_body_txt {
-      max-height: 100px; }
+      max-height: 120px; }
     .pCard_body h2, .pCard_body .h2 {
       text-align: center;
       font-family: "Montserrat", sans-serif;
@@ -11033,7 +11035,7 @@ ul {
     .pCard_body h3, .pCard_body .h3 {
       font-size: .7rem;
       border-bottom: dotted 1px gainsboro;
-      padding-bottom: .3rem;
+      padding-bottom: .2rem;
       word-wrap: break-word; }
     .pCard_body p {
       word-wrap: break-word;
@@ -11428,9 +11430,11 @@ main {
         border-radius: 2px; }
       main .main_section4_full_vid {
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        flex-wrap: wrap; }
         main .main_section4_full_vid video {
-          height: 500px; }
+          height: 500px;
+          padding: 0 .5rem 1rem .5rem; }
   main .contact {
     padding-top: 1.5rem;
     margin-bottom: 4rem; }
