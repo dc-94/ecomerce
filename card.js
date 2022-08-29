@@ -143,7 +143,7 @@ class cardC extends HTMLElement {
                       <div class="pCard_body_modal_content_body_info_btns">
                         <button type="button" class="btn link" data-bs-dismiss="modal">Cerrar</button>
                         <button type="button" class="wsp ">
-                          <a href="https://api.whatsapp.com/send?phone=543413594100&text=Hola%21%20buenos%20m%C3%A1s%20rmaci%C3%B3n%20sobre%20${this.titulo}-${this.prodnum}%202." target="_blank">Consultar</a>
+                          <a href="https://api.whatsapp.com/send?phone=543413094710&text=Hola%21%20buenos%20m%C3%A1s%20rmaci%C3%B3n%20sobre%20${this.titulo}-${this.prodnum}%202." target="_blank">Consultar</a>
                         </button>
                       </div>
                   </div>
