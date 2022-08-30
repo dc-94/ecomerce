@@ -73,7 +73,7 @@ class cardS extends HTMLElement {
         <div class="pCard prod-card">
         <div class="pCard_img">
           <div id="${this.prodnum}" class="carousel slide" data-bs-ride="carousel">
-        <div class="off"><p>${this.off}</p></div>
+        
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#${this.prodnum}" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -100,8 +100,6 @@ class cardS extends HTMLElement {
           <div class="pCard_body_txt">
             <h3>${this.titulo}</h3>
             <p class="ps-1">${this.categoria}</p>
-            <p class="precio ps-3"><span>${this.precion}</span></p>
-            <p class="precio ps-3">${this.preciod}</p>
           </div>
           <div class="pCard_body_modal">
           
@@ -149,12 +147,6 @@ class cardS extends HTMLElement {
                       <h5 class="modal-title" id="${this.prodnum}1Label">${this.titulo}</h5>
                     </div>
                     <div class="pCard_body_modal_content_body_info_txt">
-                      <div class="off"><p>${this.off}</p></div>
-                      <p class="precio ps-3"><span>${this.precion}</span></p>
-                      <p class="precio">${this.preciod} </p>
-                      <hr class="dropdown-divider">
-                      <p class="presentacion">Detalles:</p>
-                      <p>${this.desc}</p>
                       <hr class="dropdown-divider">
                       <p><strong>Marca:</strong> ${this.marca}</p>
                       <hr class="dropdown-divider">
